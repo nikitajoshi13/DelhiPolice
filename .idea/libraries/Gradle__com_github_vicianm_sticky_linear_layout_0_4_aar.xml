@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.vicianm:sticky-linear-layout:0.4@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/sticky-linear-layout-0.4.aar/79e15e802aa0fdec45301a14e61cbe4c/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/sticky-linear-layout-0.4.aar/79e15e802aa0fdec45301a14e61cbe4c/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.vicianm/sticky-linear-layout/0.4/b58fdc7bfd66faa63f41b97001b6c80291b7261d/sticky-linear-layout-0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
