@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.delhipolice.avishigoyal.delhipolice">
-
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <uses-feature android:name="android.hardware.camera" />
 
     <application
@@ -17,8 +18,8 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-       <activity android:name=".SplashScreen.SlpashScreen">
+        <activity android:name=".Login.RegisterActivity"></activity>
+        <activity android:name=".SplashScreen.SlpashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,18 +32,13 @@
         <activity
             android:name=".Complains.ComplainLodge"
             android:label="@string/title_activity_complain_lodge"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-
-        <activity android:name=".Complains.OCR.OcrCaptureActivity">
-
-        </activity>
-        <activity android:name=".Complains.ComplainStatus.PopWindow"
-            android:theme="@style/AppTheme.CustomTheme"
-            android:label="Status">
-
-        </activity>
-
-        <activity android:name=".Complains.OCR.LoggedComplain"/>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Complains.OCR.OcrCaptureActivity"></activity>
+        <activity
+            android:name=".Complains.ComplainStatus.PopWindow"
+            android:label="Status"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
+        <activity android:name=".Complains.OCR.LoggedComplain" />
     </application>
 
 </manifest>

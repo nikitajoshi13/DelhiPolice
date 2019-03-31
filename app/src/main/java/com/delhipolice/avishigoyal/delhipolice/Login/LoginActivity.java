@@ -32,6 +32,8 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 
 import com.delhipolice.avishigoyal.delhipolice.Complains.ComplainLodge;
+import com.delhipolice.avishigoyal.delhipolice.Database.Login;
+import com.delhipolice.avishigoyal.delhipolice.Database.Register;
 import com.delhipolice.avishigoyal.delhipolice.R;
 import com.delhipolice.avishigoyal.delhipolice.common.MyPrefences;
 
@@ -69,6 +71,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private EditText mPasswordView;
     private View mProgressView;
     private View mLoginFormView;
+    private Button mButton;
 
 
     @Override
@@ -95,6 +98,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 attemptLogin();
             }
         });
@@ -102,6 +106,15 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         mLoginFormView = findViewById(R.id.login_form);
         mProgressView = findViewById(R.id.login_progress);
         myPrefences = new MyPrefences(this);
+
+        mButton = findViewById(R.id.register);
+        mButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent register = new Intent(LoginActivity.this,RegisterActivity.class);
+                startActivity(register);
+            }
+        });
 
     }
 
@@ -206,7 +219,9 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             mAuthTask.execute((Void) null);
 
             myPrefences.setIsNotLogin(false);
-
+            //dont change database code
+           /* Login login = new Login(email, password,getApplicationContext());
+            login.execute("");*/
             Intent i = new Intent(LoginActivity.this, ComplainLodge.class);
             startActivity(i);
         }
