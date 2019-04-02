@@ -16,5 +16,4 @@
             android:layout_height="match_parent" />
 
     </com.delhipolice.avishigoyal.delhipolice.Complains.OCR.camera.CameraSourcePreview>
-
 </LinearLayout>

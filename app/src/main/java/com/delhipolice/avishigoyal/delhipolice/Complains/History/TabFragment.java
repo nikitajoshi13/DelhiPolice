@@ -13,11 +13,14 @@ import android.widget.TextView;
 
 import com.delhipolice.avishigoyal.delhipolice.R;
 
+import java.util.ArrayList;
+
 
 public class TabFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     int position;
     private TextView textView;
+    OurData ab,bc;
 
     public static TabFragment newInstance(int position) {
         Bundle bundle = new Bundle();
@@ -37,11 +40,25 @@ public class TabFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_tab, container, false);
+
+        ab = new OurData();
+        ab.setComplainID("201904231122");
+        ab.setLocation("kashmere Gate");
+        ab.setStatus("Pending");
+        bc = new OurData();
+        bc.setComplainID("201904231123");
+        bc.setLocation("Dilshad Garden");
+        ab.setStatus("Completed");
+
+        ArrayList<OurData> data =new ArrayList<>();
+        data.add(ab);
+        data.add(bc);
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.listRecyclerView);
-        ListAdapterr listAdapter = new ListAdapterr();
+        ListAdapterr listAdapter = new ListAdapterr(getContext(),data);
         recyclerView.setAdapter((RecyclerView.Adapter) listAdapter);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
+
         return view;
     }
 }
