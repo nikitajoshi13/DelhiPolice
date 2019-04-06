@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.Toast;
 
+import com.delhipolice.avishigoyal.delhipolice.Complains.History.ListAdapterr;
 import com.delhipolice.avishigoyal.delhipolice.R;
 
 import java.util.ArrayList;
@@ -23,6 +24,13 @@ public class PoliceStatusList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_police_status_list);
+
+
+        recyclerView = findViewById(R.id.policerecycle);
+        layoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(layoutManager);
+
+
         listMineList = new ArrayList<>();
         OurData ourData =new OurData();
         OurData ourData1 =new OurData();
@@ -100,4 +108,6 @@ public class PoliceStatusList extends AppCompatActivity {
                 break;
         }
     }
+
+
 }

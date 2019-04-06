@@ -2,6 +2,7 @@ package com.delhipolice.avishigoyal.delhipolice.Police;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.delhipolice.avishigoyal.delhipolice.Police.NewAdapter;
@@ -23,6 +24,12 @@ public class PoliceVendorstatus extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_police_vendorstatus);
+
+
+        recyclerView = findViewById(R.id.vendorpolice);
+        layoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(layoutManager);
+
         listMineList = new ArrayList<>();
         VendorData vendorData =new VendorData();
         VendorData vendorData1 =new VendorData();
