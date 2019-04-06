@@ -43,31 +43,63 @@
             android:layout_gravity="center"
             android:checked="false" />
 
+
         <Button
             android:id="@+id/read_text_button"
             android:layout_marginTop="@dimen/button_margin_top"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
+            android:paddingLeft="15dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingRight="15dp"
             android:layout_height="wrap_content"
             android:text="@string/read_text"
-            android:background="@color/colorAccent"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorTheme"
             android:textColor="@android:color/white"/>
 
+        <TextView
+            android:id="@+id/text_your_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Your location" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:minHeight="@dimen/text_value_min_height"
+            android:layout_margin="@dimen/small_margin"
+            android:background="@drawable/dashed_border"
+            android:layout_marginBottom="20dp"
+            />
+
+        <TextView
+            android:id="@+id/text_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Date" />
+
+        <TextView
+            android:id="@+id/Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:minHeight="@dimen/text_value_min_height"
+            android:layout_margin="@dimen/small_margin"
+            android:background="@drawable/dashed_border" />
+
+
         <Button
-            android:id="@+id/copy_text_button"
+            android:id="@+id/Register"
             android:layout_marginTop="@dimen/button_margin_top"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/copy_text"
-            android:background="@color/colorAccent"
-            android:textColor="@android:color/white"/>
-
-        <Button
-            android:id="@+id/mail_text_button"
-            android:layout_marginTop="@dimen/button_margin_top"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/send_email_text"
-            android:background="@color/colorAccent"
+            android:text="Register Complain"
+            android:background="@color/colorTheme"
             android:textColor="@android:color/white"/>
 
     </LinearLayout>

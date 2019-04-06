@@ -34,10 +34,6 @@
             android:label="@string/title_activity_complain_lodge"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Complains.OCR.OcrCaptureActivity" />
-        <activity
-            android:name=".Complains.ComplainStatus.PopWindow"
-            android:label="Status"
-            android:theme="@style/AppTheme.CustomTheme" />
         <activity android:name=".Complains.OCR.LoggedComplain" />
     </application>
 

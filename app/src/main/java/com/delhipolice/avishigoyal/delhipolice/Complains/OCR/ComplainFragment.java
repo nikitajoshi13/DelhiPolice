@@ -89,43 +89,6 @@ public class ComplainFragment extends android.support.v4.app.Fragment {
             }
         });
 
-        copyButton = (Button) view.findViewById(R.id.copy_text_button);
-        copyButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(Build.VERSION.SDK_INT < Build.VERSION_CODES.HONEYCOMB) {
-                    android.text.ClipboardManager clipboard =
-                            (android.text.ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
-                    clipboard.setText(textValue.getText().toString());
-                } else {
-                    android.content.ClipboardManager clipboard =
-                            (android.content.ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
-                    android.content.ClipData clip = android.content.ClipData.newPlainText("Copied Text", textValue.getText().toString());
-                    clipboard.setPrimaryClip(clip);
-                }
-                Toast.makeText(getContext(), R.string.clipboard_copy_successful_message, Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        mailTextButton = (Button) view.findViewById(R.id.mail_text_button);
-        mailTextButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(Intent.ACTION_SEND);
-                i.setType("message/rfc822");
-                i.putExtra(Intent.EXTRA_EMAIL,"goyalavishi@gmail.com") ;
-                i.putExtra(Intent.EXTRA_SUBJECT, "Complain Regarding Traffic Light");
-                i.putExtra(Intent.EXTRA_TEXT, "Pole number: "+textValue.getText().toString()+" is not working properly.");
-                try {
-                    startActivity(Intent.createChooser(i, getString(R.string.mail_intent_chooser_text)));
-                } catch (android.content.ActivityNotFoundException ex) {
-                    Toast.makeText(getContext(),
-                            R.string.no_email_client_error, Toast.LENGTH_SHORT).show();
-                }
-
-                Toast.makeText(getContext(),"Complain lodged", Toast.LENGTH_SHORT).show();
-            }
-        });
         return view;
     }
 

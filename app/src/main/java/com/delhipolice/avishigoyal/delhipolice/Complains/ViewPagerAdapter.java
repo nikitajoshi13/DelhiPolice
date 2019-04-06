@@ -4,9 +4,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.util.Log;
-import android.widget.Toast;
 
-import com.delhipolice.avishigoyal.delhipolice.Complains.ComplainStatus.StatusComplain;
 import com.delhipolice.avishigoyal.delhipolice.Complains.History.TabFragment;
 import com.delhipolice.avishigoyal.delhipolice.Complains.OCR.ComplainFragment;
 import com.delhipolice.avishigoyal.delhipolice.Complains.vendor.VendorFragment;
