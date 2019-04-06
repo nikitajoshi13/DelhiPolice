@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.android.support:support-media-compat:28.0.0@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/e501475c5c9f2acd1466e69a727bfe3c/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/d8c417af7938cdfe6b41ee0f854beb8a/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/e501475c5c9f2acd1466e69a727bfe3c/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/e501475c5c9f2acd1466e69a727bfe3c/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/d8c417af7938cdfe6b41ee0f854beb8a/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/d8c417af7938cdfe6b41ee0f854beb8a/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

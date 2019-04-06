@@ -48,7 +48,7 @@ public class TabFragment extends Fragment {
         bc = new OurData();
         bc.setComplainID("201904231123");
         bc.setLocation("Dilshad Garden");
-        ab.setStatus("Completed");
+        bc.setStatus("Completed");
 
         ArrayList<OurData> data =new ArrayList<>();
         data.add(ab);

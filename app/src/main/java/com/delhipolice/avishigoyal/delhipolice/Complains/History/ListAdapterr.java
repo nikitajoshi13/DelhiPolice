@@ -1,6 +1,7 @@
 package com.delhipolice.avishigoyal.delhipolice.Complains.History;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -23,7 +24,9 @@ public class ListAdapterr extends RecyclerView.Adapter<ListAdapterr.MyHolder> {
     Context obj;
     int res;
     ArrayList<OurData> data;
-
+    String s1="Pending";
+    String s2="Completed";
+    String stat;
 
     public ListAdapterr(Context obj,ArrayList<OurData> data)
     {
@@ -49,15 +52,18 @@ public class ListAdapterr extends RecyclerView.Adapter<ListAdapterr.MyHolder> {
 
         myHolder.complainid.setText(data.get(i).getComplainID());
         myHolder.location.setText(data.get(i).getLocation());
-        myHolder.status.setText(data.get(i).getStatus());
-//        if(data.get(i).getStatus().equals("Pending"))
-//        {
-//            myHolder.sta.setColorFilter(R.color.red);
-//        }
-//        if(data.get(i).getStatus().equals("Completed"))
-//        {
-//            myHolder.sta.setColorFilter(R.color.green);
-//        }
+
+        stat=data.get(i).getStatus();
+        myHolder.status.setText(stat);
+        //boolean result = stat.equals(s1);
+      if(stat.equals(s1))
+        {
+            myHolder.sta.setColorFilter(Color.RED);
+        }
+        if(stat.equals(s2))
+        {
+            myHolder.sta.setColorFilter(Color.GREEN );
+        }
     }
 
     @Override
