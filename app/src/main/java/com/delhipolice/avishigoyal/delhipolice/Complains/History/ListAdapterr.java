@@ -50,14 +50,14 @@ public class ListAdapterr extends RecyclerView.Adapter<ListAdapterr.MyHolder> {
         myHolder.complainid.setText(data.get(i).getComplainID());
         myHolder.location.setText(data.get(i).getLocation());
         myHolder.status.setText(data.get(i).getStatus());
-        if(data.get(i).getStatus().equals("Pending"))
-        {
-            myHolder.sta.setColorFilter(R.color.red);
-        }
-        if(data.get(i).getStatus().equals("Completed"))
-        {
-            myHolder.sta.setColorFilter(R.color.green);
-        }
+//        if(data.get(i).getStatus().equals("Pending"))
+//        {
+//            myHolder.sta.setColorFilter(R.color.red);
+//        }
+//        if(data.get(i).getStatus().equals("Completed"))
+//        {
+//            myHolder.sta.setColorFilter(R.color.green);
+//        }
     }
 
     @Override

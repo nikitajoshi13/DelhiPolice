@@ -3,6 +3,7 @@ package com.delhipolice.avishigoyal.delhipolice.Police;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.Toast;
 
@@ -17,6 +18,7 @@ public class PoliceStatusList extends AppCompatActivity {
     RecyclerView.Adapter mAdapter;
     RecyclerView.LayoutManager layoutManager;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,10 +30,12 @@ public class PoliceStatusList extends AppCompatActivity {
         ourData.setLocation("Kailash Colony");
         ourData.setTraffic("Id: 98765432");
         ourData.setComments("No Comments");
+        ourData.setStatus("New");
         ourData1.setComplaints("Complaint 678910");
         ourData1.setLocation("Amar Colony");
         ourData1.setTraffic("Id: 1234567");
         ourData1.setComments("yes Comments");
+        ourData1.setStatus("Complete");
         Intent intent=getIntent();
         String value=intent.getStringExtra("Button");
         String stts=ourData.getStatus();
@@ -83,7 +87,7 @@ public class PoliceStatusList extends AppCompatActivity {
 
                 break;
             case "5":
-                if(stts.equals("Payment Approved")){
+                if(stts.equals("Complete")){
                     ourData.setVendor("Abdul vendor");
                     ourData1.setVendor("Nadeem vendor");
                     listMineList.add(ourData);
