@@ -1,0 +1,29 @@
+package com.delhipolice.avishigoyal.delhipolice.Police;
+
+public class VendorData {
+    String name,assigned,handled;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAssigned() {
+        return assigned;
+    }
+
+    public void setAssigned(String assigned) {
+        this.assigned = assigned;
+    }
+
+    public String getHandled() {
+        return handled;
+    }
+
+    public void setHandled(String handled) {
+        this.handled = handled;
+    }
+}

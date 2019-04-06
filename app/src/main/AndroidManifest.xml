@@ -17,7 +17,7 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Police.VendorNames"></activity>
+        <activity android:name=".Police.PoliceVendorstatus"></activity>
         <activity android:name=".Police.PoliceStatusList" />
         <activity android:name=".SplashScreen.SlpashScreen">
             <intent-filter>

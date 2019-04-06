@@ -1,6 +1,7 @@
 package com.delhipolice.avishigoyal.delhipolice.Police;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -45,13 +46,20 @@ public class NewAdapter extends RecyclerView.Adapter<NewAdapter.MyHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyHolder myHolder, int i) {
+    public void onBindViewHolder(@NonNull MyHolder myHolder, final int i) {
         myHolder.complaint.setText(listData.get(i).getComplaints());
         myHolder.location.setText(listData.get(i).getLocation());
         myHolder.trafficlight.setText(listData.get(i).getTraffic());
         myHolder.comment.setText(listData.get(i).getComments());
         myHolder.assignedto.setText("Assigned To");
         myHolder.assignedto.setVisibility(View.VISIBLE);
+        myHolder.assignedto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(obj,PoliceVendorstatus.class);
+                obj.startActivity(intent);
+            }
+        });
     }
 
     @Override

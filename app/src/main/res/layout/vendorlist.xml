@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".Police.VendorNames"
     android:layout_margin="10dp">
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,7 +14,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="25dp"
-        android:text="Name: " />
+        android:text="Name: "
+        android:textColor="@color/colorTheme"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -32,7 +32,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="25dp"
-            android:text="Complaints assigned: " />
+            android:text="Complaints assigned: "
+            android:textColor="@color/colorTheme"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -49,7 +50,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="25dp"
-            android:text="Total handled till date: " />
+            android:text="Total handled till date: "
+            android:textColor="@color/colorTheme"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -60,8 +62,11 @@
    <Button
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
+       android:id="@+id/assignbtn"
        android:text="Assign New"
        android:textSize="25dp"
-       android:gravity="center" />
+       android:layout_gravity="center"
+       android:textColor="#FFFFFF"
+       android:backgroundTint="@color/colorTheme"/>
 
 </LinearLayout>
