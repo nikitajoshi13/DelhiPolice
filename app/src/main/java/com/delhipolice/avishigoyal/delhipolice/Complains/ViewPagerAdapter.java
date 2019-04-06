@@ -10,6 +10,7 @@ import com.delhipolice.avishigoyal.delhipolice.Complains.ComplainStatus.StatusCo
 import com.delhipolice.avishigoyal.delhipolice.Complains.History.TabFragment;
 import com.delhipolice.avishigoyal.delhipolice.Complains.OCR.ComplainFragment;
 import com.delhipolice.avishigoyal.delhipolice.Complains.vendor.VendorFragment;
+import com.delhipolice.avishigoyal.delhipolice.Police.StatusButton;
 import com.delhipolice.avishigoyal.delhipolice.common.MyPrefences;
 
 class ViewPagerAdapter extends FragmentPagerAdapter {
@@ -32,7 +33,7 @@ class ViewPagerAdapter extends FragmentPagerAdapter {
         return TabFragment.newInstance(position);
 
         if(position==2 && userType.equals("2"))
-            return StatusComplain.newInstance(position);
+            return StatusButton.newInstance(position);
 
         if(position==2 && userType.equals("3"))
             return VendorFragment.newInstance(position);

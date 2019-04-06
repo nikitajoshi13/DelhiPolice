@@ -60,7 +60,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.MyHolder> {
         public MyHolder(@NonNull View itemView, final OnItemClickListener listener) {
 
             super(itemView);
-            textView=itemView.findViewById(R.id.tv1);
+            //textView=itemView.findViewById(R.id.tv1);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".Police.StatusButton">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:id="@+id/newbutt"
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:textSize="20sp"
+        android:text="New Complaint"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/pendbutt"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:textSize="20sp"
+        android:text="Pending Complaint"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/butt"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:textSize="20sp"
+        android:text="Completed Complaints"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/approvepaybutt"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:textSize="20sp"
+        android:text="Approve Payment"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/pendingpaybutt"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Pending Payment"
+        android:textAlignment="center"/>
+
+</LinearLayout>

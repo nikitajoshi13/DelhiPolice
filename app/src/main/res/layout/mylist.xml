@@ -4,15 +4,117 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:id="@+id/mylistlinear"
+    android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/complaintid"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:text="Complaint Id: 201903312345"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/colorTheme"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:adjustViewBounds="true"
+            android:tint="@color/colorTheme"
+            android:src="@drawable/location" />
         <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:id="@+id/tv1"/>
+            android:layout_height="wrap_content"
+            android:id="@+id/locid"
+            android:textSize="25dp"
+            android:hint="Location Id" />
+
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/id" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/traffid"
+            android:textSize="25dp"
+            android:hint="Traffic Light id" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:adjustViewBounds="true"
+            android:tint="@color/colorTheme"
+            android:src="@drawable/comment" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/commid"
+            android:textSize="25dp"
+            android:hint="Comment" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/engineer" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/vendorid"
+            android:textSize="25dp"
+            android:hint="Vendor" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <Button
+            android:background="@color/colorTheme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btnstat"/>
+    </LinearLayout>
+
+
 
 </LinearLayout>
