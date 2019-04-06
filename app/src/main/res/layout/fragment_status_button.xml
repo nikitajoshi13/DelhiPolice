@@ -17,6 +17,8 @@
         android:layout_marginBottom="15dp"
         android:textSize="20sp"
         android:text="New Complaint"
+        android:backgroundTint="@color/colorTheme"
+        android:textColor="#FFFFFF"
         android:textAlignment="center"/>
 
     <Button
@@ -27,6 +29,8 @@
         android:layout_marginBottom="15dp"
         android:textSize="20sp"
         android:text="Pending Complaint"
+        android:backgroundTint="@color/colorTheme"
+        android:textColor="#FFFFFF"
         android:textAlignment="center"/>
 
     <Button
@@ -37,6 +41,8 @@
         android:layout_marginBottom="15dp"
         android:textSize="20sp"
         android:text="Completed Complaints"
+        android:backgroundTint="@color/colorTheme"
+        android:textColor="#FFFFFF"
         android:textAlignment="center"/>
 
     <Button
@@ -47,6 +53,8 @@
         android:layout_marginBottom="15dp"
         android:textSize="20sp"
         android:text="Approve Payment"
+        android:backgroundTint="@color/colorTheme"
+        android:textColor="#FFFFFF"
         android:textAlignment="center"/>
 
     <Button
@@ -56,6 +64,8 @@
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:text="Pending Payment"
+        android:backgroundTint="@color/colorTheme"
+        android:textColor="#FFFFFF"
         android:textAlignment="center"/>
 
 </LinearLayout>

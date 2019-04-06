@@ -16,7 +16,6 @@ import java.util.List;
 
 public class PendingAdapter extends RecyclerView.Adapter<PendingAdapter.MyHolder> {
 
-    private OnItemClickListener mlistener;
     public interface OnItemClickListener{
         void onItemClick(int position);
     }
@@ -25,21 +24,19 @@ public class PendingAdapter extends RecyclerView.Adapter<PendingAdapter.MyHolder
     int res;
     private List<OurData> listData;
 
-
     public PendingAdapter(Context obj, List listData)
     {
         this.obj=obj;
         this.listData=listData;
     }
     public void setOnItemClickListener(OnItemClickListener listener){
-        mlistener=listener;
+        //mlistener=listener;
     }
     @NonNull
     @Override
     public MyHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         View view= LayoutInflater.from(obj).inflate(R.layout.mylist,null);
-
-        MyHolder myHolder=new MyHolder(view,mlistener);
+        MyHolder myHolder=new MyHolder(view);
 
         return myHolder;
     }
@@ -54,6 +51,12 @@ public class PendingAdapter extends RecyclerView.Adapter<PendingAdapter.MyHolder
         myHolder.vendor.setText(listData.get(i).getVendor());
         myHolder.callto.setText("Assigned To");
         myHolder.callto.setVisibility(View.VISIBLE);
+        myHolder.callto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 
     @Override
@@ -64,7 +67,8 @@ public class PendingAdapter extends RecyclerView.Adapter<PendingAdapter.MyHolder
     public class MyHolder extends RecyclerView.ViewHolder {
         TextView complaint,location,trafficlight,comment,vendor;
         Button callto;
-        public MyHolder(@NonNull View itemView, final OnItemClickListener listener) {
+
+        public MyHolder(@NonNull View itemView) {
 
             super(itemView);
             complaint=itemView.findViewById(R.id.complaintid);
@@ -73,7 +77,6 @@ public class PendingAdapter extends RecyclerView.Adapter<PendingAdapter.MyHolder
             comment=itemView.findViewById(R.id.commid);
             callto=itemView.findViewById(R.id.btnstat);
             vendor=itemView.findViewById(R.id.vendorid);
-
 
         }
     }
