@@ -51,8 +51,9 @@ public class NewAdapter extends RecyclerView.Adapter<NewAdapter.MyHolder> {
         myHolder.location.setText(listData.get(i).getLocation());
         myHolder.trafficlight.setText(listData.get(i).getTraffic());
         myHolder.comment.setText(listData.get(i).getComments());
-        myHolder.assignedto.setText("Assigned To");
+        myHolder.assignedto.setText("Assign To");
         myHolder.assignedto.setVisibility(View.VISIBLE);
+
         myHolder.assignedto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,6 +71,7 @@ public class NewAdapter extends RecyclerView.Adapter<NewAdapter.MyHolder> {
     public class MyHolder extends RecyclerView.ViewHolder {
         TextView complaint,location,trafficlight,comment;
         Button assignedto;
+
         public MyHolder(@NonNull View itemView, final OnItemClickListener listener) {
 
             super(itemView);
@@ -78,6 +80,8 @@ public class NewAdapter extends RecyclerView.Adapter<NewAdapter.MyHolder> {
             trafficlight=itemView.findViewById(R.id.traffid);
             comment=itemView.findViewById(R.id.commid);
             assignedto=itemView.findViewById(R.id.btnstat);
+
+            //assignedto.invalidate();
             //vendor=itemView.findViewById(R.id.vendorid);
 
 

@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.delhipolice.avishigoyal.delhipolice.R;
@@ -49,7 +50,7 @@ public class CompleteAdapter extends RecyclerView.Adapter<CompleteAdapter.MyHold
         myHolder.location.setText(listData.get(i).getLocation());
         myHolder.trafficlight.setText(listData.get(i).getTraffic());
         myHolder.comment.setText(listData.get(i).getComments());
-        myHolder.vendor.setVisibility(View.VISIBLE);
+        myHolder.linearLayout.setVisibility(View.VISIBLE);
         myHolder.vendor.setText(listData.get(i).getVendor());
     }
 
@@ -60,6 +61,7 @@ public class CompleteAdapter extends RecyclerView.Adapter<CompleteAdapter.MyHold
 
     public class MyHolder extends RecyclerView.ViewHolder {
         TextView complaint,location,trafficlight,comment,vendor;
+        LinearLayout linearLayout;
         public MyHolder(@NonNull View itemView, final OnItemClickListener listener) {
 
             super(itemView);
@@ -68,6 +70,8 @@ public class CompleteAdapter extends RecyclerView.Adapter<CompleteAdapter.MyHold
             trafficlight=itemView.findViewById(R.id.traffid);
             comment=itemView.findViewById(R.id.commid);
             vendor=itemView.findViewById(R.id.vendorid);
+            linearLayout=itemView.findViewById(R.id.linearlay);
+            linearLayout.invalidate();
 
 
         }

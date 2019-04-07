@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -82,7 +83,6 @@ public class StatusButton extends Fragment {
         b3=view.findViewById(R.id.butt);
         b4=view.findViewById(R.id.approvepaybutt);
         b5=view.findViewById(R.id.pendingpaybutt);
-        //b6=view.findViewById(R.id.btnstat);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -113,6 +113,7 @@ public class StatusButton extends Fragment {
             public void onClick(View v) {
                 Intent intent=new Intent(getContext(),PoliceStatusList.class);
                 intent.putExtra("Button","4");
+                Log.d("button4","button 4");
                 startActivity(intent);
             }
         });

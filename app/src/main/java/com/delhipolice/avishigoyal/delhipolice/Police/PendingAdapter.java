@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.delhipolice.avishigoyal.delhipolice.R;
@@ -47,10 +48,10 @@ public class PendingAdapter extends RecyclerView.Adapter<PendingAdapter.MyHolder
         myHolder.location.setText(listData.get(i).getLocation());
         myHolder.trafficlight.setText(listData.get(i).getTraffic());
         myHolder.comment.setText(listData.get(i).getComments());
-        myHolder.vendor.setVisibility(View.VISIBLE);
-        myHolder.vendor.setText(listData.get(i).getVendor());
-        myHolder.callto.setText("Assigned To");
+        myHolder.linearLayout.setVisibility(View.VISIBLE);
         myHolder.callto.setVisibility(View.VISIBLE);
+        myHolder.vendor.setText(listData.get(i).getVendor());
+        myHolder.callto.setText("Call");
         myHolder.callto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -67,6 +68,7 @@ public class PendingAdapter extends RecyclerView.Adapter<PendingAdapter.MyHolder
     public class MyHolder extends RecyclerView.ViewHolder {
         TextView complaint,location,trafficlight,comment,vendor;
         Button callto;
+        LinearLayout linearLayout;
 
         public MyHolder(@NonNull View itemView) {
 
@@ -77,6 +79,8 @@ public class PendingAdapter extends RecyclerView.Adapter<PendingAdapter.MyHolder
             comment=itemView.findViewById(R.id.commid);
             callto=itemView.findViewById(R.id.btnstat);
             vendor=itemView.findViewById(R.id.vendorid);
+            linearLayout=itemView.findViewById(R.id.linearlay);
+           // linearLayout.invalidate();
 
         }
     }

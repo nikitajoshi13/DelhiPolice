@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.delhipolice.avishigoyal.delhipolice.R;
@@ -50,7 +51,7 @@ public class PayApproveAdapter extends RecyclerView.Adapter<PayApproveAdapter.My
         myHolder.location.setText(listData.get(i).getLocation());
         myHolder.trafficlight.setText(listData.get(i).getTraffic());
         myHolder.comment.setText(listData.get(i).getComments());
-        myHolder.vendor.setVisibility(View.VISIBLE);
+        myHolder.linearLayout.setVisibility(View.VISIBLE);
         myHolder.vendor.setText(listData.get(i).getVendor());
         myHolder.accept.setText("Accept");
         myHolder.accept.setVisibility(View.VISIBLE);
@@ -64,6 +65,7 @@ public class PayApproveAdapter extends RecyclerView.Adapter<PayApproveAdapter.My
     public class MyHolder extends RecyclerView.ViewHolder {
         TextView complaint,location,trafficlight,comment,vendor;
         Button accept;
+        LinearLayout linearLayout;
         public MyHolder(@NonNull View itemView, final OnItemClickListener listener) {
 
             super(itemView);
@@ -73,6 +75,8 @@ public class PayApproveAdapter extends RecyclerView.Adapter<PayApproveAdapter.My
             comment=itemView.findViewById(R.id.commid);
             accept=itemView.findViewById(R.id.btnstat);
             vendor=itemView.findViewById(R.id.vendorid);
+            linearLayout=itemView.findViewById(R.id.linearlay);
+            linearLayout.invalidate();
 
 
         }
