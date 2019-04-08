@@ -66,7 +66,7 @@ public class PoliceStatusList extends AppCompatActivity {
         ourData3.setLocation("Kailash Colony");
         ourData3.setTraffic("Id: 98765432");
         ourData3.setComments("No Comments");
-        ourData3.setStatus("Payement Approved");
+        ourData3.setStatus("Complete");
         ourData3.setVendor("Madina vendor");
 
 
@@ -82,7 +82,7 @@ public class PoliceStatusList extends AppCompatActivity {
         ourData5.setLocation("Amar Colony");
         ourData5.setTraffic("Id: 1234567");
         ourData5.setComments("yes Comments");
-        ourData5.setStatus("Complete");
+        ourData5.setStatus("Payment Approved");
         ourData5.setVendor("Deemak vendor");
 
         listMineList.add(ourData1);

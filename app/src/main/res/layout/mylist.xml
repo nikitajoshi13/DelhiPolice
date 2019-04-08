@@ -137,14 +137,21 @@
             />
     </LinearLayout>
     <LinearLayout
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/linearlay1"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
         <Button
             android:background="@color/colorTheme"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/btnstat"
-            android:visibility="gone"/>
+            android:visibility="gone"
+            />
     </LinearLayout>
 
 

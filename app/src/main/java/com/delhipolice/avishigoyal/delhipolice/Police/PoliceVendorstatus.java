@@ -37,9 +37,11 @@ public class PoliceVendorstatus extends AppCompatActivity {
         vendorData.setName("Jaban");
         vendorData.setAssigned("10");
         vendorData.setHandled("2");
+
         vendorData1.setName("Nasab");
         vendorData1.setAssigned("101");
         vendorData1.setHandled("21");
+
         listMineList.add(vendorData);
         listMineList.add(vendorData1);
         mAdapter = new VendorAdapter(this, listMineList);
