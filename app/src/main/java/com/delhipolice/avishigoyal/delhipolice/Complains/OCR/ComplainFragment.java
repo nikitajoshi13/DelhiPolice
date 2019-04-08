@@ -18,6 +18,11 @@ import android.widget.Toast;
 import com.delhipolice.avishigoyal.delhipolice.R;
 import com.google.android.gms.common.api.CommonStatusCodes;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
@@ -37,6 +42,10 @@ public class ComplainFragment extends android.support.v4.app.Fragment {
     private Button copyButton;
     private Button mailTextButton;
     Button readTextButton;
+  private TextView d1;
+//    private Calendar calendar;
+//    private SimpleDateFormat dateFormat;
+//    private String date;
 
     private static final int RC_OCR_CAPTURE = 9003;
     private static final String TAG = "MainActivity";
@@ -63,6 +72,15 @@ public class ComplainFragment extends android.support.v4.app.Fragment {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
+//            calendar = Calendar.getInstance();
+//            dateFormat = new SimpleDateFormat("MM/dd/yyyy");
+//            date = dateFormat.format(calendar.getTime());
+////            d1.setText(date);
+//            Date todayDate = new Date();
+//            DateFormat dateFormat = DateFormat.getDateInstance();
+//            String todayDateTimeString = dateFormat.format(todayDate);
+//            d1.setText(todayDateTimeString);
+
         }
     }
 
@@ -75,7 +93,7 @@ public class ComplainFragment extends android.support.v4.app.Fragment {
         statusMessage = (TextView)view.findViewById(R.id.status_message);
         textValue = (TextView)view.findViewById(R.id.text_value);
         useFlash = (CompoundButton) view.findViewById(R.id.use_flash);
-
+       //d1=(TextView)view.findViewById(R.id.Date);
         readTextButton = (Button) view.findViewById(R.id.read_text_button);
         readTextButton.setOnClickListener(new View.OnClickListener() {
             @Override
