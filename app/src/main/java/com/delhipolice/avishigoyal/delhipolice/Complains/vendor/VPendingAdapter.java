@@ -82,12 +82,12 @@ class VPendingAdapter extends RecyclerView.Adapter <VPendingAdapter.MyHolder>{
 //                Intent i = new Intent(Intent.ACTION_DIAL);
 //                String p = "tel:" + getString(R.string.phone_number);
 //                i.setData(Uri.parse(p));
-//                startActivity(i);
+//                obj.startActivity(i);
 //                Intent intent = new Intent(Intent.ACTION_DIAL);
 //                String temp = "tel:" + phone;
 //                intent.setData(Uri.parse(temp));
 //
-//                startActivity(intent);
+//                obj.startActivity(intent);
             }
         });
     }
