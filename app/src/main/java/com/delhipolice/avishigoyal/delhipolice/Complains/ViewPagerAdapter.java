@@ -8,7 +8,6 @@ import android.util.Log;
 import com.delhipolice.avishigoyal.delhipolice.Complains.History.TabFragment;
 import com.delhipolice.avishigoyal.delhipolice.Complains.OCR.ComplainFragment;
 import com.delhipolice.avishigoyal.delhipolice.Complains.vendor.VendorFirst;
-import com.delhipolice.avishigoyal.delhipolice.Complains.vendor.VendorFragment;
 import com.delhipolice.avishigoyal.delhipolice.Police.StatusButton;
 import com.delhipolice.avishigoyal.delhipolice.common.MyPrefences;
 

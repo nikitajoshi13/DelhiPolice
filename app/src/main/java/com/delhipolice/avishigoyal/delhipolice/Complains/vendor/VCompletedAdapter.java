@@ -25,7 +25,7 @@ public class VCompletedAdapter extends RecyclerView.Adapter <VCompletedAdapter.M
     private List<OurData> listData;
 
 
-    public VCompletedAdapter(Context obj, List listData)
+    public VCompletedAdapter(Context obj, List<OurData> listData)
     {
         this.obj=obj;
         this.listData=listData;
@@ -74,7 +74,5 @@ public class VCompletedAdapter extends RecyclerView.Adapter <VCompletedAdapter.M
 
 
         }
-    }
-    public VCompletedAdapter(VendorStatus vendorStatus, List<OurData> l3) {
     }
 }
