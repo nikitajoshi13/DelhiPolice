@@ -6,7 +6,7 @@
     android:layout_gravity="center"
     android:layout_margin="20dp"
     android:orientation="vertical"
-    tools:context=".Police.StatusButton">
+    tools:context=".Complains.vendor.VendorFirst">
 
     <!-- TODO: Update blank fragment layout -->
     <Button
