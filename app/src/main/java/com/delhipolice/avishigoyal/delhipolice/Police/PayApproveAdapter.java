@@ -1,6 +1,7 @@
 package com.delhipolice.avishigoyal.delhipolice.Police;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -9,7 +10,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.delhipolice.avishigoyal.delhipolice.Complains.ComplainLodge;
 import com.delhipolice.avishigoyal.delhipolice.R;
 
 import java.util.List;
@@ -55,6 +58,16 @@ public class PayApproveAdapter extends RecyclerView.Adapter<PayApproveAdapter.My
         myHolder.vendor.setText(listData.get(i).getVendor());
         myHolder.accept.setText("Accept");
         myHolder.accept.setVisibility(View.VISIBLE);
+        myHolder.accept.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //  Intent intent = new Intent(obj,.class);
+                Intent intent = new Intent();
+                intent.setClass(obj, ComplainLodge.class);
+                obj.startActivity(intent);
+                Toast.makeText(obj, "Payment accepted", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override

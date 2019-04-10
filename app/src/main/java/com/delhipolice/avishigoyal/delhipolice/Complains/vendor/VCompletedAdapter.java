@@ -49,7 +49,7 @@ public class VCompletedAdapter extends RecyclerView.Adapter <VCompletedAdapter.M
         myHolder.location.setText(listData.get(i).getLocation());
         myHolder.trafficlight.setText(listData.get(i).getTraffic());
         myHolder.comment.setText(listData.get(i).getComments());
-        myHolder.linearLayout.setVisibility(View.VISIBLE);
+        //myHolder.linearLayout.setVisibility(View.VISIBLE);
        // myHolder.vendor.setText(listData.get(i).getVendor());
     }
 
@@ -69,8 +69,8 @@ public class VCompletedAdapter extends RecyclerView.Adapter <VCompletedAdapter.M
             trafficlight=itemView.findViewById(R.id.traffid);
             comment=itemView.findViewById(R.id.commid);
             //vendor=itemView.findViewById(R.id.vendorid);
-            linearLayout=itemView.findViewById(R.id.linearlay);
-            linearLayout.invalidate();
+//            linearLayout=itemView.findViewById(R.id.linearlay);
+//            linearLayout.invalidate();
 
 
         }

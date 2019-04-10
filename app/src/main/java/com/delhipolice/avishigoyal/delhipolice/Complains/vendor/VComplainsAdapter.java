@@ -16,8 +16,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.delhipolice.avishigoyal.delhipolice.Complains.ComplainLodge;
 import com.delhipolice.avishigoyal.delhipolice.Police.NewAdapter;
 import com.delhipolice.avishigoyal.delhipolice.Police.PoliceVendorstatus;
 import com.delhipolice.avishigoyal.delhipolice.R;
@@ -64,6 +67,7 @@ public class VComplainsAdapter extends RecyclerView.Adapter <VComplainsAdapter.M
         myHolder.location.setText(listData.get(i).getLocation());
         myHolder.trafficlight.setText(listData.get(i).getTraffic());
         myHolder.comment.setText(listData.get(i).getComments());
+        myHolder.linearLayout.setVisibility(View.VISIBLE);
         myHolder.stat.setText(listData.get(i).getStat());
         s=listData.get(i).getStat();
         //boolean result = stat.equals(s1);
@@ -84,17 +88,18 @@ public class VComplainsAdapter extends RecyclerView.Adapter <VComplainsAdapter.M
         myHolder.assignedto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(obj, VendorFirst.class);
-//                Intent intent=new Intent();
-//                intent.setClass(obj,VendorFirst.class);
-//                obj.startActivity(intent);
+              //  Intent intent = new Intent(obj,.class);
+                Intent intent=new Intent();
+                intent.setClass(obj,ComplainLodge.class);
+                obj.startActivity(intent);
+                Toast.makeText(obj,"This task is completed",Toast.LENGTH_SHORT).show();
 
 
-                Fragment fragment = (Fragment) VendorFirst.newInstance(0);
-
-                FragmentTransaction transaction = ((FragmentActivity)obj).getSupportFragmentManager().beginTransaction();
-
-                transaction.replace(R.id.vendorfirst, fragment).commit();
+//                Fragment fragment = (Fragment) VendorFirst.newInstance(0);
+//
+//                FragmentTransaction transaction = ((FragmentActivity)obj).getSupportFragmentManager().beginTransaction();
+//
+//                transaction.replace(R.id.vendorfirst, fragment).commit();
 
             }
         });
@@ -107,6 +112,7 @@ public class VComplainsAdapter extends RecyclerView.Adapter <VComplainsAdapter.M
 
     public class MyHolder extends RecyclerView.ViewHolder {
         TextView complaint, location, trafficlight, comment,stat;
+        LinearLayout linearLayout;
         ImageView sta;
         Button assignedto;
 
@@ -117,10 +123,13 @@ public class VComplainsAdapter extends RecyclerView.Adapter <VComplainsAdapter.M
             location = itemView.findViewById(R.id.locid);
             trafficlight = itemView.findViewById(R.id.traffid);
             comment = itemView.findViewById(R.id.commid);
+            linearLayout=itemView.findViewById(R.id.ll);
+            linearLayout.invalidate();
             stat=itemView.findViewById(R.id.status);
             stat.setVisibility(View.VISIBLE);
             sta=itemView.findViewById(R.id.circle);
             sta.setVisibility(View.VISIBLE);
+
             assignedto = itemView.findViewById(R.id.btnstat);
 
             //assignedto.invalidate();

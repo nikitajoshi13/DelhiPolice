@@ -139,7 +139,8 @@
         android:orientation="horizontal"
         android:gravity="right"
         android:layout_marginRight="5dp"
-        android:visibility="gone">
+        android:visibility="gone"
+        android:id="@+id/ll">
 
         <TextView
             android:id="@+id/status"

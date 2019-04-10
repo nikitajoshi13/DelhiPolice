@@ -62,33 +62,46 @@ public class PendingAdapter extends RecyclerView.Adapter<PendingAdapter.MyHolder
         myHolder.vendor.setText(listData.get(i).getVendor());
         myHolder.callto.setText("Call");
 
-        PhoneCallListener phoneListener = new PhoneCallListener();
-        TelephonyManager telephonyManager = (TelephonyManager) this.obj.getSystemService(Context.TELEPHONY_SERVICE);
-        telephonyManager.listen(phoneListener, PhoneStateListener.LISTEN_CALL_STATE);
-
-
-
+//        PhoneCallListener phoneListener = new PhoneCallListener();
+//        TelephonyManager telephonyManager = (TelephonyManager) this.obj.getSystemService(Context.TELEPHONY_SERVICE);
+//        telephonyManager.listen(phoneListener, PhoneStateListener.LISTEN_CALL_STATE);
+//
         myHolder.callto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String phone="9716013005";
-                Intent callIntent = new Intent(Intent.ACTION_CALL);
-                String temp="tel:"+phone;
-                callIntent.setData(Uri.parse(temp));
-                if (ActivityCompat.checkSelfPermission(obj, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-                    // TODO: Consider calling
-                    //    ActivityCompat#requestPermissions
-                    // here to request the missing permissions, and then overriding
-                    //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-                    //                                          int[] grantResults)
-                    // to handle the case where the user grants the permission. See the documentation
-                    // for ActivityCompat#requestPermissions for more details.
-                    return;
-                }
-                obj.startActivity(callIntent);
+//                Intent intent = new Intent(obj, VPendingAdapter.class);
+//                obj.startActivity(intent);
+                //code for automatic calling
+                Intent i = new Intent(Intent.ACTION_DIAL);
+                String p = "tel:" + "01122114265";
+                i.setData(Uri.parse(p));
+                obj.startActivity(i);
+
             }
         });
-    }
+
+
+//        myHolder.callto.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                String phone="9716013005";
+//                Intent callIntent = new Intent(Intent.ACTION_CALL);
+//                String temp="tel:"+phone;
+//                callIntent.setData(Uri.parse(temp));
+//                if (ActivityCompat.checkSelfPermission(obj, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+//                    // TODO: Consider calling
+//                    //    ActivityCompat#requestPermissions
+//                    // here to request the missing permissions, and then overriding
+//                    //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+//                    //                                          int[] grantResults)
+//                    // to handle the case where the user grants the permission. See the documentation
+//                    // for ActivityCompat#requestPermissions for more details.
+//                    return;
+//                }
+//                obj.startActivity(callIntent);
+            }
+        //});
+
 
     @Override
     public int getItemCount() {

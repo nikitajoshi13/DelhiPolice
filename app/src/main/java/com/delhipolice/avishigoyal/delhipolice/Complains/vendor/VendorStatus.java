@@ -72,7 +72,7 @@ public class VendorStatus extends AppCompatActivity {
         ourData2.setLocation("Kashmere Gate");
         ourData2.setTraffic("Id: 98765432");
         ourData2.setComments("No Comments");
-        ourData2.setStatus(" Completed with Payment Pending");
+        ourData2.setStatus("Payment");
         //ourData2.setVendor("Nadeem vendor");
 
 
@@ -80,7 +80,7 @@ public class VendorStatus extends AppCompatActivity {
         ourData3.setLocation("Kailash Colony");
         ourData3.setTraffic("Id: 98765432");
         ourData3.setComments("No Comments");
-        ourData3.setStatus("Completed with payment");
+        ourData3.setStatus("Completed");
         //ourData3.setVendor("Madina vendor");
 
 
@@ -102,7 +102,7 @@ public class VendorStatus extends AppCompatActivity {
         listVendor.add(ourData1);
         listVendor.add(ourData2);
         listVendor.add(ourData3);
-//        listMineList.add(ourData4);
+        listVendor.add(ourData4);
 //        listMineList.add(ourData5);
 
 
@@ -111,10 +111,10 @@ public class VendorStatus extends AppCompatActivity {
             if(listVendor.get(i).getStatus().equals("Complains")){
                 l1.add(listVendor.get(i));
             }
-            else if(listVendor.get(i).getStatus().equals("Completed with Payment Pending")) {
+            else if(listVendor.get(i).getStatus().equals("Payment")) {
                 l2.add(listVendor.get(i));
             }
-            else if(listVendor.get(i).getStatus().equals("Completed with payment")){
+            else if(listVendor.get(i).getStatus().equals("Completed")){
                 l3.add(listVendor.get(i));
             }
 //            else if(listMineList.get(i).getStatus().equals("Payment Approved")){
