@@ -7,9 +7,9 @@
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
 
     <uses-feature android:name="android.hardware.camera" />
 
@@ -20,11 +20,11 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Police.PoliceVendorstatus"></activity>
-        <activity android:name=".Complains.vendor.VendorStatus"/>
+        <activity android:name=".ACP.ACP"></activity>
+        <activity android:name=".Police.PoliceVendorstatus" />
+        <activity android:name=".Complains.vendor.VendorStatus" />
         <activity android:name=".Police.PoliceStatusList" />
         <activity android:name=".SplashScreen.SlpashScreen">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

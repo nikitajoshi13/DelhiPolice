@@ -1,10 +1,17 @@
-package com.delhipolice.avishigoyal.delhipolice.Police;
+package com.delhipolice.avishigoyal.delhipolice.ACP;
 
 public class OurData {
-   private String complaints,location,traffic,comments,vendor;
+   private String complaints,location,traffic,comments,vendor,beatofficer;
     public String latitude,longitude;
     public String status;
 
+    public String getBeatofficer() {
+        return beatofficer;
+    }
+
+    public void setBeatofficer(String beatofficer) {
+        this.beatofficer = beatofficer;
+    }
 //   public OurData(String complaints,String location,String traffic, String comments, String vendor){
 //       this.complaints=complaints;
 //       this.location=location;
@@ -76,5 +83,4 @@ public class OurData {
     public void setStatus(String status) {
         this.status = status;
     }
-
 }
