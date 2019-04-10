@@ -24,6 +24,7 @@
         <activity android:name=".Complains.vendor.VendorStatus"/>
         <activity android:name=".Police.PoliceStatusList" />
         <activity android:name=".SplashScreen.SlpashScreen">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

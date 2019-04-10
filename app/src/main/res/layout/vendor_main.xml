@@ -6,7 +6,8 @@
     android:layout_gravity="center"
     android:layout_margin="20dp"
     android:orientation="vertical"
-    tools:context=".Complains.vendor.VendorFirst">
+    tools:context=".Complains.vendor.VendorFirst"
+    android:id="@+id/vendorfirst">
 
     <!-- TODO: Update blank fragment layout -->
     <Button
