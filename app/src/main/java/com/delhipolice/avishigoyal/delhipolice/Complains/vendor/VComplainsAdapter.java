@@ -6,6 +6,10 @@ import android.graphics.Color;
 import android.graphics.ColorFilter;
 import android.graphics.drawable.ColorDrawable;
 import android.support.annotation.NonNull;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -80,8 +84,18 @@ public class VComplainsAdapter extends RecyclerView.Adapter <VComplainsAdapter.M
         myHolder.assignedto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(obj, VendorFirst.class);
-                obj.startActivity(intent);
+                //Intent intent = new Intent(obj, VendorFirst.class);
+//                Intent intent=new Intent();
+//                intent.setClass(obj,VendorFirst.class);
+//                obj.startActivity(intent);
+
+
+                Fragment fragment = (Fragment) VendorFirst.newInstance(0);
+
+                FragmentTransaction transaction = ((FragmentActivity)obj).getSupportFragmentManager().beginTransaction();
+
+                transaction.replace(R.id.vendorfirst, fragment).commit();
+
             }
         });
     }
