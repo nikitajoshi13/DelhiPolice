@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.Toast;
 
 import com.delhipolice.avishigoyal.delhipolice.Police.NewAdapter;
 import com.delhipolice.avishigoyal.delhipolice.Police.OurData;
@@ -45,6 +46,7 @@ public class PoliceVendorstatus extends AppCompatActivity {
         listMineList.add(vendorData);
         listMineList.add(vendorData1);
         mAdapter = new VendorAdapter(this, listMineList);
+        Toast.makeText(this, "adapter toast", Toast.LENGTH_SHORT).show();
         recyclerView.setAdapter(mAdapter);
 
     }
