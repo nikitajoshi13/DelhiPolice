@@ -21,6 +21,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Police.PoliceVendorstatus"></activity>
+        <activity android:name=".Complains.vendor.VendorStatus"/>
         <activity android:name=".Police.PoliceStatusList" />
         <activity android:name=".SplashScreen.SlpashScreen">
             <intent-filter>

@@ -80,7 +80,7 @@ public class VComplainsAdapter extends RecyclerView.Adapter <VComplainsAdapter.M
         myHolder.assignedto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(obj, VPendingAdapter.class);
+                Intent intent = new Intent(obj, VendorStatus.class);
                 obj.startActivity(intent);
             }
         });

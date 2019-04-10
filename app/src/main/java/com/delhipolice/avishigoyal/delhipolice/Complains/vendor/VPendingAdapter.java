@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import com.delhipolice.avishigoyal.delhipolice.R;
 
+import java.util.ArrayList;
 import java.util.List;
 
 class VPendingAdapter extends RecyclerView.Adapter <VPendingAdapter.MyHolder>{
@@ -31,7 +32,7 @@ class VPendingAdapter extends RecyclerView.Adapter <VPendingAdapter.MyHolder>{
     String s2="Pending";
 
 
-    public VPendingAdapter(Context obj, List listData) {
+    public VPendingAdapter(Context obj, List<OurData> listData) {
         this.obj = obj;
         this.listData = listData;
     }
@@ -79,21 +80,18 @@ class VPendingAdapter extends RecyclerView.Adapter <VPendingAdapter.MyHolder>{
 //                Intent intent = new Intent(obj, VPendingAdapter.class);
 //                obj.startActivity(intent);
                 //code for automatic calling
-//                Intent i = new Intent(Intent.ACTION_DIAL);
-//                String p = "tel:" + getString(R.string.phone_number);
-//                i.setData(Uri.parse(p));
-//                obj.startActivity(i);
-//                Intent intent = new Intent(Intent.ACTION_DIAL);
-//                String temp = "tel:" + phone;
-//                intent.setData(Uri.parse(temp));
-//
-//                obj.startActivity(intent);
+                Intent i = new Intent(Intent.ACTION_DIAL);
+                String p = "tel:" + "01122114265";
+                i.setData(Uri.parse(p));
+                obj.startActivity(i);
+
             }
         });
     }
 
     @Override
     public int getItemCount() {
+        //listData=new ArrayList<OurData>();
         return listData.size();
     }
 
@@ -121,6 +119,6 @@ class VPendingAdapter extends RecyclerView.Adapter <VPendingAdapter.MyHolder>{
 
         }
     }
-    public VPendingAdapter(VendorStatus vendorStatus, List<OurData> l2) {
-    }
+//    public VPendingAdapter(VendorStatus vendorStatus, List<OurData> l2) {
+//    }
 }
