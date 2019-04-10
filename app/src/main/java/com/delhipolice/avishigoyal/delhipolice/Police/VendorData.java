@@ -1,7 +1,8 @@
 package com.delhipolice.avishigoyal.delhipolice.Police;
 
 public class VendorData {
-    String name,assigned,handled;
+    String name,assigned,handled,phno;
+
 
     public String getName() {
         return name;
@@ -25,5 +26,13 @@ public class VendorData {
 
     public void setHandled(String handled) {
         this.handled = handled;
+    }
+
+    public String getPhno() {
+        return phno;
+    }
+
+    public void setPhno(String phno) {
+        this.phno = phno;
     }
 }

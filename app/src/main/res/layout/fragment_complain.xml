@@ -64,16 +64,33 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Your location" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
         <TextView
             android:id="@+id/location"
-            android:layout_width="match_parent"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:minHeight="@dimen/text_value_min_height"
             android:layout_margin="@dimen/small_margin"
             android:background="@drawable/dashed_border"
-            android:layout_marginBottom="20dp"
+
             />
+            <Button
+                android:id="@+id/locate"
+                android:layout_width="70dp"
+                android:paddingLeft="10dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingRight="10dp"
+                android:layout_height="45dp"
+android:backgroundTint="@color/colorTheme"
+                android:background="@drawable/gps"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
 
         <TextView
             android:id="@+id/text_date"
@@ -88,7 +105,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:minHeight="@dimen/text_value_min_height"
+           android:minHeight="@dimen/text_value_min_height"
             android:layout_margin="@dimen/small_margin"
             android:background="@drawable/dashed_border" />
 

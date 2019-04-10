@@ -1,7 +1,9 @@
 package com.delhipolice.avishigoyal.delhipolice.Complains.vendor;
 
+import com.delhipolice.avishigoyal.delhipolice.Police.VendorData;
+
 public class OurData {
-    private String complaints,location,traffic,comments,vendor;
+    private String complaints,location,traffic,comments,vendor,ph;
     public String latitude,longitude;
     public String status,stat;
 
@@ -11,7 +13,16 @@ public class OurData {
 //       this.traffic=traffic;
 //       this.comments=comments;
 //       this.vendor=vendor;
-//   }
+//
+
+
+    public String getPh() {
+        return ph;
+    }
+
+    public void setPh(String ph) {
+        this.ph = ph;
+    }
 
     public String getComplaints() {
         return complaints;

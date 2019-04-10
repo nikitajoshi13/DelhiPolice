@@ -80,8 +80,9 @@ class VPendingAdapter extends RecyclerView.Adapter <VPendingAdapter.MyHolder>{
 //                Intent intent = new Intent(obj, VPendingAdapter.class);
 //                obj.startActivity(intent);
                 //code for automatic calling
+                String no=listData.get(i).getPh();
                 Intent i = new Intent(Intent.ACTION_DIAL);
-                String p = "tel:" + "01122114265";
+                String p = "tel:" + no;
                 i.setData(Uri.parse(p));
                 obj.startActivity(i);
 

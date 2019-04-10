@@ -1,11 +1,19 @@
 package com.delhipolice.avishigoyal.delhipolice.Complains.OCR;
 
-import android.content.Context;
-import android.content.Intent;
-import android.net.Uri;
-import android.os.Build;
-import android.os.Bundle;
+import android.Manifest;
+import android.app.AlertDialog;
 import android.app.Fragment;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.location.Location;
+import android.net.Uri;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.provider.Settings;
+import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,19 +21,17 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.delhipolice.avishigoyal.delhipolice.R;
 import com.google.android.gms.common.api.CommonStatusCodes;
 
 import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
+
  * {@link ComplainFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
  * Use the {@link ComplainFragment#newInstance} factory method to
@@ -43,6 +49,13 @@ public class ComplainFragment extends android.support.v4.app.Fragment {
     private Button mailTextButton;
     Button readTextButton;
   private TextView d1;
+    private TextView tvAddress;
+    private Button btnShowAddress;
+    AppLocationService appLocationService;
+    Context thiscontext;
+    private static final int REQUEST_CODE_PERMISSION = 2;
+    String mPermission = Manifest.permission.ACCESS_FINE_LOCATION;
+
 //    private Calendar calendar;
 //    private SimpleDateFormat dateFormat;
 //    private String date;
@@ -72,16 +85,10 @@ public class ComplainFragment extends android.support.v4.app.Fragment {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
-//            calendar = Calendar.getInstance();
-//            dateFormat = new SimpleDateFormat("MM/dd/yyyy");
-//            date = dateFormat.format(calendar.getTime());
-////            d1.setText(date);
-//            Date todayDate = new Date();
-//            DateFormat dateFormat = DateFormat.getDateInstance();
-//            String todayDateTimeString = dateFormat.format(todayDate);
-//            d1.setText(todayDateTimeString);
 
-        }
+
+
+      }
     }
 
     @Override
@@ -93,7 +100,125 @@ public class ComplainFragment extends android.support.v4.app.Fragment {
         statusMessage = (TextView)view.findViewById(R.id.status_message);
         textValue = (TextView)view.findViewById(R.id.text_value);
         useFlash = (CompoundButton) view.findViewById(R.id.use_flash);
-       //d1=(TextView)view.findViewById(R.id.Date);
+            TextView d1 = view.findViewById(R.id.Date);
+        thiscontext = container.getContext();
+//        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+//        String currentDateandTime = sdf.format(new Date());
+//        //TextView tv = (TextView) v.findViewById(R.id.textDate2);
+//        d1.setText(currentDateandTime);
+        Calendar calendar = Calendar.getInstance();
+        String currentDate = DateFormat.getDateInstance(DateFormat.FULL).format(calendar.getTime());
+        //TextView textViewDate = findViewById(R.id.text_view_date);
+        d1.setText(currentDate);
+
+        tvAddress = (TextView) view.findViewById(R.id.location);
+        appLocationService = new AppLocationService(thiscontext);
+
+//        btnGPSShowLocation = (Button) findViewById(R.id.btnGPSShowLocation);
+//        btnGPSShowLocation.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View arg0) {
+//                Location gpsLocation = appLocationService
+//                        .getLocation(LocationManager.GPS_PROVIDER);
+//                if (gpsLocation != null) {
+//                    double latitude = gpsLocation.getLatitude();
+//                    double longitude = gpsLocation.getLongitude();
+//                    String result = "Latitude: " + gpsLocation.getLatitude() +
+//                            " Longitude: " + gpsLocation.getLongitude();
+//                    tvAddress.setText(result);
+//                } else {
+//                    showSettingsAlert();
+//                }
+//            }
+//        });
+
+
+
+        class GeocoderHandler extends Handler {
+            @Override
+            public void handleMessage(Message message) {
+                String locationAddress;
+                switch (message.what) {
+                    case 1:
+                        Bundle bundle = message.getData();
+                        locationAddress = bundle.getString("address");
+                        break;
+                    default:
+                        locationAddress = null;
+                }
+                tvAddress.setText(locationAddress);
+            }
+        }
+
+        try {
+            if (ActivityCompat.checkSelfPermission(getActivity(), mPermission)
+                    != PackageManager.PERMISSION_GRANTED) {
+
+                ActivityCompat.requestPermissions(getActivity(), new String[]{mPermission},
+                        REQUEST_CODE_PERMISSION);
+
+                // If any permission above not allowed by user, this condition will
+
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        btnShowAddress = (Button)view.findViewById(R.id.locate);
+        btnShowAddress.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Location location = appLocationService.getLocation();
+
+                //you can hard-code the lat & long if you have issues with getting it
+                //remove the below if-condition and use the following couple of lines
+                //double latitude = 37.422005;
+                //double longitude = -122.084095
+
+                if (location != null) {
+                    double latitude = location.getLatitude();
+                    double longitude = location.getLongitude();
+                    LocationAddress locationAddress = new LocationAddress();
+                    locationAddress.getAddressFromLocation(latitude, longitude, thiscontext, new GeocoderHandler());
+                }
+                else {
+                    showAlert();
+                }
+
+            }
+        });
+
+
+//        gps.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                // launch Ocr capture activity.
+//                this.locationResult = new LocationResult(){
+//                    @Override
+//                    public void gotLocation(Location location){
+//
+//                        //Got the location!
+//                        if(location!=null){
+//
+//                            double latitude = location.getLatitude();
+//                            double longitude = location.getLongitude();
+//
+//                            Log.e(TAG, "lat: " + latitude + ", long: " + longitude);
+//
+//                            // here you can save the latitude and longitude values
+//                            // maybe in your text file or database
+//
+//                        }else{
+//                            Log.e(TAG, "Location is null.");
+//                        }
+//
+//                    }
+
+//                };
+
+
+
+                // to get location updates, initialize LocationResult
+
         readTextButton = (Button) view.findViewById(R.id.read_text_button);
         readTextButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -106,6 +231,7 @@ public class ComplainFragment extends android.support.v4.app.Fragment {
                 startActivityForResult(intent, RC_OCR_CAPTURE);
             }
         });
+
 
         return view;
     }
@@ -174,5 +300,27 @@ public class ComplainFragment extends android.support.v4.app.Fragment {
         else {
             super.onActivityResult(requestCode, resultCode, data);
         }
+    }
+
+    public void showAlert()
+    {
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(thiscontext);
+        alertDialog.setTitle("SETTINGS");
+        alertDialog.setMessage("Enable Location Provider! Go to settings menu?");
+        alertDialog.setPositiveButton("Settings",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent intent = new Intent(
+                                Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+                        ComplainFragment.this.startActivity(intent);
+                    }
+                });
+        alertDialog.setNegativeButton("Cancel",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+        alertDialog.show();
     }
 }

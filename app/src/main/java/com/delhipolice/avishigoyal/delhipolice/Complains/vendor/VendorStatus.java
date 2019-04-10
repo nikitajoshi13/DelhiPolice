@@ -58,6 +58,7 @@ public class VendorStatus extends AppCompatActivity {
         ourData1.setComments("No Comments");
         ourData1.setStatus("Complains");
         ourData1.setStat("New");
+        ourData1.setPh("01122114165");
 
         ourData4.setComplaints("Complaint 12445");
         ourData4.setLocation("Dilshad Colony");
@@ -65,7 +66,9 @@ public class VendorStatus extends AppCompatActivity {
         ourData4.setComments("No Comments");
         ourData4.setStatus("Complains");
         ourData4.setStat("Pending");
-       // ourData1.setVendor("Abdul vendor");
+        ourData4.setPh("01122114165");
+
+        // ourData1.setVendor("Abdul vendor");
 
 
         ourData2.setComplaints("Complaint 20101");
@@ -73,6 +76,8 @@ public class VendorStatus extends AppCompatActivity {
         ourData2.setTraffic("Id: 98765432");
         ourData2.setComments("No Comments");
         ourData2.setStatus("Payment");
+        ourData2.setPh("01122114165");
+
         //ourData2.setVendor("Nadeem vendor");
 
 
@@ -81,6 +86,8 @@ public class VendorStatus extends AppCompatActivity {
         ourData3.setTraffic("Id: 98765432");
         ourData3.setComments("No Comments");
         ourData3.setStatus("Completed");
+        ourData3.setPh("01122114165");
+
         //ourData3.setVendor("Madina vendor");
 
 
