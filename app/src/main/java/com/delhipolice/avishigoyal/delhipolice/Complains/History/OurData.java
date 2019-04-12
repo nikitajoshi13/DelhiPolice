@@ -5,9 +5,17 @@ public class OurData {
     public String location;
     public String latitude,longitude;
     public String status;
+    public String date;
     public String LocationId;
     public String Vendor;
     public String trafficId;
+
+    public void setDate(String date)
+    {
+        this.date=date;
+    }
+
+    public String getDate(){ return date;}
 
     public String getComplainID() {
         return complainID;

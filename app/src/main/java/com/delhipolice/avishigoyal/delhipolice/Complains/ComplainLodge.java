@@ -17,6 +17,7 @@ public class ComplainLodge extends AppCompatActivity {
     private ViewPager viewPager;
     MyPrefences myPrefences;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

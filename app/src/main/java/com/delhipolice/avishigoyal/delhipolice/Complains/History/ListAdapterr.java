@@ -52,6 +52,7 @@ public class ListAdapterr extends RecyclerView.Adapter<ListAdapterr.MyHolder> {
 
         myHolder.complainid.setText(data.get(i).getComplainID());
         myHolder.location.setText(data.get(i).getLocation());
+        myHolder.date.setText(data.get(i).getDate());
 
         stat=data.get(i).getStatus();
         myHolder.status.setText(stat);
@@ -72,7 +73,7 @@ public class ListAdapterr extends RecyclerView.Adapter<ListAdapterr.MyHolder> {
     }
 
     public class MyHolder extends RecyclerView.ViewHolder {
-        TextView complainid,location,status;
+        TextView complainid,location,status,date;
         ImageView sta;
 
         public MyHolder(@NonNull View itemView, final OnItemClickListener listener) {
@@ -82,6 +83,7 @@ public class ListAdapterr extends RecyclerView.Adapter<ListAdapterr.MyHolder> {
             location=itemView.findViewById(R.id.Location);
             status=itemView.findViewById(R.id.status);
             sta=itemView.findViewById(R.id.circle);
+            date=itemView.findViewById(R.id.date);
 
 
         }

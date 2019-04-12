@@ -23,8 +23,9 @@
             android:id="@+id/status_message"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/ocr_header" />
+            android:text= "@string/ocr_header" />
 
         <TextView
             android:id="@+id/text_value"
@@ -32,7 +33,10 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:minHeight="@dimen/text_value_min_height"
-            android:layout_margin="@dimen/small_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:foregroundGravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="5dp"
             android:background="@drawable/dashed_border" />
 
         <CheckBox
@@ -43,52 +47,43 @@
             android:layout_gravity="center"
             android:checked="false" />
 
-
-        <Button
-            android:id="@+id/read_text_button"
-            android:layout_marginTop="@dimen/button_margin_top"
-            android:layout_width="wrap_content"
-            android:paddingLeft="15dp"
-            android:layout_gravity="center_horizontal"
-            android:paddingRight="15dp"
-            android:layout_height="wrap_content"
-            android:text="@string/read_text"
-            android:layout_marginBottom="20dp"
-            android:background="@color/colorTheme"
-            android:textColor="@android:color/white"/>
-
         <TextView
             android:id="@+id/text_your_location"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
+
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Your location" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:weightSum="10"
             android:orientation="horizontal"
+            android:layout_marginTop="@dimen/small_margin"
             android:layout_marginBottom="20dp">
         <TextView
             android:id="@+id/location"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="10"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:minHeight="@dimen/text_value_min_height"
-            android:layout_margin="@dimen/small_margin"
+            android:foregroundGravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="5dp"
             android:background="@drawable/dashed_border"
+            android:layout_height="wrap_content" />
 
-            />
-            <Button
+            <ImageView
                 android:id="@+id/locate"
-                android:layout_width="70dp"
-                android:paddingLeft="10dp"
-                android:layout_gravity="center_horizontal"
-                android:paddingRight="10dp"
-                android:layout_height="45dp"
-android:backgroundTint="@color/colorTheme"
-                android:background="@drawable/gps"
-                android:textColor="@android:color/white"/>
+                android:layout_weight="1"
+                android:layout_width="30dp"
+                android:layout_marginLeft="30dp"
+                android:visibility="gone"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/colorTheme"
+                android:background="@drawable/gps" />
 
         </LinearLayout>
 
@@ -97,6 +92,8 @@ android:backgroundTint="@color/colorTheme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:textSize="20dp"
+
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Date" />
 
@@ -106,7 +103,11 @@ android:backgroundTint="@color/colorTheme"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
            android:minHeight="@dimen/text_value_min_height"
-            android:layout_margin="@dimen/small_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:foregroundGravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="5dp"
+
             android:background="@drawable/dashed_border" />
 
 

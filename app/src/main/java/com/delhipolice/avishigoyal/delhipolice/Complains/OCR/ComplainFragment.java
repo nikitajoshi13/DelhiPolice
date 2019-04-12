@@ -45,8 +45,7 @@ public class ComplainFragment extends android.support.v4.app.Fragment {
     private CompoundButton useFlash;
     private TextView statusMessage;
     private TextView textValue;
-    private Button copyButton;
-    private Button mailTextButton;
+  Button register;
     Button readTextButton;
   private TextView d1;
     private TextView tvAddress;
@@ -163,8 +162,8 @@ public class ComplainFragment extends android.support.v4.app.Fragment {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        btnShowAddress = (Button)view.findViewById(R.id.locate);
-        btnShowAddress.setOnClickListener(new View.OnClickListener() {
+       // tvAddress = view.findViewById(R.id.);
+        tvAddress.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
                 Location location = appLocationService.getLocation();
@@ -219,8 +218,8 @@ public class ComplainFragment extends android.support.v4.app.Fragment {
 
                 // to get location updates, initialize LocationResult
 
-        readTextButton = (Button) view.findViewById(R.id.read_text_button);
-        readTextButton.setOnClickListener(new View.OnClickListener() {
+       // readTextButton = (Button) view.findViewById(R.id.read_text_button);
+        textValue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // launch Ocr capture activity.
@@ -274,19 +273,19 @@ public class ComplainFragment extends android.support.v4.app.Fragment {
         if(requestCode == RC_OCR_CAPTURE) {
             if (resultCode == CommonStatusCodes.SUCCESS) {
                 if (data != null) {
-                    readTextButton.setText("REGISTER COMPLAIN");
+                  //  readTextButton.setText("REGISTER COMPLAIN");
                     String text = data.getStringExtra(OcrCaptureActivity.TextBlockObject);
                     statusMessage.setText(R.string.ocr_success);
                     textValue.setText(text);
                     Log.d(TAG, "Text read: " + text);
 
-                    readTextButton.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            Intent i=new Intent(getContext(),LoggedComplain.class);
-                            startActivity(i);
-                        }
-                    });
+                   // readTextButton.setOnClickListener(new View.OnClickListener() {
+                      //  @Override
+                       // public void onClick(View v) {
+                         //   Intent i=new Intent(getContext(),LoggedComplain.class);
+                           // startActivity(i);
+                        //}
+                    //});
                 } else {
                     statusMessage.setText(R.string.ocr_failure);
                     Log.d(TAG, "No Text captured, intent data is null");

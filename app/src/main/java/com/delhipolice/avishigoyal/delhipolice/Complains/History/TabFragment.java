@@ -43,10 +43,13 @@ public class TabFragment extends Fragment {
 
         ab = new OurData();
         ab.setComplainID("201904231122");
-        ab.setLocation("kashmere Gate");
+        ab.setLocation("Kashmere Gate");
+        ab.setDate("Friday, 12 April, 2019");
         ab.setStatus("Pending");
         bc = new OurData();
         bc.setComplainID("201904231123");
+        bc.setDate("Monday, 8 April, 2019");
+
         bc.setLocation("Dilshad Garden");
         bc.setStatus("Completed");
 
