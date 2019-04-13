@@ -60,6 +60,8 @@ public class PendingAdapter extends RecyclerView.Adapter<PendingAdapter.MyHolder
         myHolder.linearLayout.setVisibility(View.VISIBLE);
         myHolder.callto.setVisibility(View.VISIBLE);
         myHolder.vendor.setText(listData.get(i).getVendor());
+        myHolder.date.setText(listData.get(i).getDate());
+
         myHolder.callto.setText("Call");
 
 //        PhoneCallListener phoneListener = new PhoneCallListener();
@@ -109,7 +111,7 @@ public class PendingAdapter extends RecyclerView.Adapter<PendingAdapter.MyHolder
     }
 
     public class MyHolder extends RecyclerView.ViewHolder {
-        TextView complaint,location,trafficlight,comment,vendor;
+        TextView complaint,location,trafficlight,comment,vendor,date;
         Button callto;
         LinearLayout linearLayout;
 
@@ -123,7 +125,9 @@ public class PendingAdapter extends RecyclerView.Adapter<PendingAdapter.MyHolder
             callto=itemView.findViewById(R.id.btnstat);
             vendor=itemView.findViewById(R.id.vendorid);
             linearLayout=itemView.findViewById(R.id.linearlay);
-           // linearLayout.invalidate();
+            date=itemView.findViewById(R.id.date);
+
+            // linearLayout.invalidate();
 
         }
     }

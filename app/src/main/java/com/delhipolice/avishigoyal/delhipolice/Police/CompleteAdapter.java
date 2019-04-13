@@ -52,6 +52,8 @@ public class CompleteAdapter extends RecyclerView.Adapter<CompleteAdapter.MyHold
         myHolder.comment.setText(listData.get(i).getComments());
         myHolder.linearLayout.setVisibility(View.VISIBLE);
         myHolder.vendor.setText(listData.get(i).getVendor());
+        myHolder.date.setText(listData.get(i).getDate());
+
     }
 
     @Override
@@ -60,7 +62,7 @@ public class CompleteAdapter extends RecyclerView.Adapter<CompleteAdapter.MyHold
     }
 
     public class MyHolder extends RecyclerView.ViewHolder {
-        TextView complaint,location,trafficlight,comment,vendor;
+        TextView complaint,location,trafficlight,comment,vendor,date;
         LinearLayout linearLayout;
         public MyHolder(@NonNull View itemView, final OnItemClickListener listener) {
 
@@ -72,6 +74,8 @@ public class CompleteAdapter extends RecyclerView.Adapter<CompleteAdapter.MyHold
             vendor=itemView.findViewById(R.id.vendorid);
             linearLayout=itemView.findViewById(R.id.linearlay);
             linearLayout.invalidate();
+            date=itemView.findViewById(R.id.date);
+
 
 
         }

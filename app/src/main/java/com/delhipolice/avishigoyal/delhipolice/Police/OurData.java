@@ -4,8 +4,16 @@ public class OurData {
    private String complaints,location,traffic,comments,vendor;
     public String latitude,longitude;
     public String status;
+    public String date;
 
-//   public OurData(String complaints,String location,String traffic, String comments, String vendor){
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+    //   public OurData(String complaints,String location,String traffic, String comments, String vendor){
 //       this.complaints=complaints;
 //       this.location=location;
 //       this.traffic=traffic;

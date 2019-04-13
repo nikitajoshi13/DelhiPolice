@@ -47,6 +47,7 @@ public class PoliceStatusList extends AppCompatActivity {
         OurData ourData5 = new OurData();
 
         ourData1.setComplaints("Complaint 12345");
+        ourData1.setDate("Friday, 12 April, 2019");
         ourData1.setLocation("Kailash Colony");
         ourData1.setTraffic("Id: 98765432");
         ourData1.setComments("No Comments");
@@ -57,6 +58,8 @@ public class PoliceStatusList extends AppCompatActivity {
         ourData2.setComplaints("Complaint 20101");
         ourData2.setLocation("Kashmere Gate");
         ourData2.setTraffic("Id: 98765432");
+        ourData2.setDate("Friday, 12 April, 2019");
+
         ourData2.setComments("No Comments");
         ourData2.setStatus("Pending");
         ourData2.setVendor("Nadeem vendor");
@@ -64,6 +67,7 @@ public class PoliceStatusList extends AppCompatActivity {
 
         ourData3.setComplaints("Complaint 12345");
         ourData3.setLocation("Kailash Colony");
+        ourData3.setDate("Friday, 12 April, 2019");
         ourData3.setTraffic("Id: 98765432");
         ourData3.setComments("No Comments");
         ourData3.setStatus("Complete");
@@ -73,6 +77,7 @@ public class PoliceStatusList extends AppCompatActivity {
         ourData4.setComplaints("Complaint 12345");
         ourData4.setLocation("Kailash Colony");
         ourData4.setTraffic("Id: 98765432");
+        ourData4.setDate("Friday, 12 April, 2019");
         ourData4.setComments("No Comments");
         ourData4.setStatus("Payment Pending");
         ourData4.setVendor("Nadil vendor");
@@ -82,6 +87,8 @@ public class PoliceStatusList extends AppCompatActivity {
         ourData5.setLocation("Amar Colony");
         ourData5.setTraffic("Id: 1234567");
         ourData5.setComments("yes Comments");
+        ourData5.setDate("Friday, 12 April, 2019");
+
         ourData5.setStatus("Payment Approved");
         ourData5.setVendor("Deemak vendor");
 
@@ -145,6 +152,4 @@ public class PoliceStatusList extends AppCompatActivity {
                 break;
         }
     }
-
-
 }
