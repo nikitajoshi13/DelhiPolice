@@ -45,9 +45,9 @@ public class ComplainFragment extends android.support.v4.app.Fragment {
     private CompoundButton useFlash;
     private TextView statusMessage;
     private TextView textValue;
-  Button register;
+    Button register;
     Button readTextButton;
-  private TextView d1;
+    private TextView d1;
     private TextView tvAddress;
     private Button btnShowAddress;
     AppLocationService appLocationService;

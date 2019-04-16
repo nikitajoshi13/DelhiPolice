@@ -6,6 +6,7 @@ import android.os.AsyncTask;
 import android.widget.Toast;
 
 import com.delhipolice.avishigoyal.delhipolice.Complains.ComplainLodge;
+import com.delhipolice.avishigoyal.delhipolice.common.MyPrefences;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -17,11 +18,13 @@ public class Login extends AsyncTask<String,String,String> {
     String email,pass,user;
     Boolean flag;
     Context context;
+    MyPrefences myPrefences;
     ConnectionClass connectionClass;
     public Login(String email, String pass, Context context){
         this.email=email;
         this.pass=pass;
         this.context=context;
+        myPrefences = new MyPrefences(this.context);
         connectionClass = new ConnectionClass();
     }
     @Override
@@ -44,9 +47,11 @@ public class Login extends AsyncTask<String,String,String> {
                     String email_db = rs.getString("email");
                     String pass_db = rs.getString("password");
                     String user_db = rs.getString("user");
+                    int user_id = Integer.parseInt(rs.getString("sno"));
                     if (email.equals(email_db)&&pass.equals(pass_db)) {
                         flag=true;
                         user=user_db;
+                        myPrefences.setUserId(user_id);
                     }
                 }
                 if(flag) {

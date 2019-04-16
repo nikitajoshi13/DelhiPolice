@@ -57,7 +57,7 @@ public class ListAdapterr extends RecyclerView.Adapter<ListAdapterr.MyHolder> {
         stat=data.get(i).getStatus();
         myHolder.status.setText(stat);
         //boolean result = stat.equals(s1);
-      if(stat.equals(s1))
+        if(stat.equals(s1))
         {
             myHolder.sta.setColorFilter(Color.RED);
         }

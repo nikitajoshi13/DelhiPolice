@@ -6,9 +6,12 @@ import android.os.AsyncTask;
 import android.widget.Toast;
 
 import com.delhipolice.avishigoyal.delhipolice.Complains.ComplainLodge;
+import com.delhipolice.avishigoyal.delhipolice.common.MyPrefences;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
 public class Register extends AsyncTask<String,String,String> {
     String res = "";
@@ -16,6 +19,7 @@ public class Register extends AsyncTask<String,String,String> {
     String name,email,phn,pass,user;
     Context context;
     ConnectionClass connectionClass;
+    MyPrefences myPrefences;
     public Register(String name, String email, String phn, String user, String pass, Context context){
         this.name=name;
         this.email=email;
@@ -23,6 +27,7 @@ public class Register extends AsyncTask<String,String,String> {
         this.pass=pass;
         this.user=user;
         this.context=context;
+        myPrefences = new MyPrefences(this.context);
         connectionClass = new ConnectionClass();
     }
     @Override
@@ -44,9 +49,18 @@ public class Register extends AsyncTask<String,String,String> {
                 stt.setString(4,user);
                 stt.setString(5,pass);
                 stt.executeUpdate();
-                res="Successfull";
-                isSuccess=true;
-            }
+                stt = con.prepareStatement("select * from test where email = ?");
+                stt.setString(1,email);
+                ResultSet rs = stt.executeQuery();
+                con.setAutoCommit(true);
+                while(rs.next()) {
+                    int user_id = Integer.parseInt(rs.getString("sno"));
+                    myPrefences.setUserId(user_id);
+                    res = "Successfull";
+                    isSuccess = true;
+                    }
+                }
+
         }
         catch (Exception e){
             isSuccess=false;

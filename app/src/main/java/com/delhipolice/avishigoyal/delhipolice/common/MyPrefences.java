@@ -15,6 +15,7 @@ public class MyPrefences {
     private static final String IS_NOT_LOGIN = "IsNotLogin";
     private static final String TYPE_OF_USER = "TypeOfUser";
     private static final String NUMBER_OF_FRAGMENTS= "NumberOfFragments";
+    private static final String USER_ID = "UserId";
 
 
 
@@ -63,6 +64,17 @@ public class MyPrefences {
     public String getTypeOfUser()
     {
         return pref.getString(TYPE_OF_USER,"1");
+    }
+
+    public void setUserId(int userId){
+
+       editor.putInt(USER_ID,userId);
+       editor.commit();
+
+    }
+
+    public String getUserId(){
+        return pref.getString(USER_ID,"1");
     }
 
     public void setNumberOfFragments(String number)
