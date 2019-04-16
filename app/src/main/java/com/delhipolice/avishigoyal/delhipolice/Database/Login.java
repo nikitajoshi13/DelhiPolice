@@ -51,7 +51,7 @@ public class Login extends AsyncTask<String,String,String> {
                     if (email.equals(email_db)&&pass.equals(pass_db)) {
                         flag=true;
                         user=user_db;
-                        myPrefences.setUserId(user_id);
+                        myPrefences.setUserId(String.valueOf(user_id));
                     }
                 }
                 if(flag) {

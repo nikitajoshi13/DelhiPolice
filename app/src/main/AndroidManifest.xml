@@ -40,6 +40,9 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".Login.RegisterActivity"
+            android:label="@string/title_activity_login" />
+        <activity
             android:name=".Login.LoginActivity"
             android:label="@string/title_activity_login" />
         <activity

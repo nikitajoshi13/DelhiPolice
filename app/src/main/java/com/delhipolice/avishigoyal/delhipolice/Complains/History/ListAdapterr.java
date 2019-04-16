@@ -50,21 +50,22 @@ public class ListAdapterr extends RecyclerView.Adapter<ListAdapterr.MyHolder> {
     @Override
     public void onBindViewHolder(@NonNull MyHolder myHolder, int i) {
 
-        myHolder.complainid.setText(data.get(i).getComplainID());
-        myHolder.location.setText(data.get(i).getLocation());
-        myHolder.date.setText(data.get(i).getDate());
+        OurData ourData = data.get(i);
+        myHolder.complainid.setText(ourData.getComplainID());
+        myHolder.location.setText(ourData.getLocation());
+        myHolder.date.setText(ourData.getDate());
 
-        stat=data.get(i).getStatus();
-        myHolder.status.setText(stat);
+        //stat=data.get(i).getStatus();
+        //myHolder.status.setText(stat);
         //boolean result = stat.equals(s1);
-        if(stat.equals(s1))
+        /*if(stat.equals(s1))
         {
             myHolder.sta.setColorFilter(Color.RED);
         }
         if(stat.equals(s2))
         {
             myHolder.sta.setColorFilter(Color.GREEN );
-        }
+        }*/
     }
 
     @Override

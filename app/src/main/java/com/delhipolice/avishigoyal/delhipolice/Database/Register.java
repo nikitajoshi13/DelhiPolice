@@ -55,7 +55,7 @@ public class Register extends AsyncTask<String,String,String> {
                 con.setAutoCommit(true);
                 while(rs.next()) {
                     int user_id = Integer.parseInt(rs.getString("sno"));
-                    myPrefences.setUserId(user_id);
+                    myPrefences.setUserId(String.valueOf(user_id));
                     res = "Successfull";
                     isSuccess = true;
                     }
@@ -72,6 +72,7 @@ public class Register extends AsyncTask<String,String,String> {
     protected void onPostExecute(String result){
 
         if(result.equals("Successfull")){
+            Toast.makeText(context,"Successfull"+myPrefences.getUserId(), Toast.LENGTH_LONG).show();
             Intent intent = new Intent(context, ComplainLodge.class).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             context.startActivity(intent);
         }else{

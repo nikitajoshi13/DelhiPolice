@@ -23,6 +23,8 @@ import android.widget.CompoundButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.delhipolice.avishigoyal.delhipolice.Database.Register;
+import com.delhipolice.avishigoyal.delhipolice.Database.RegisterComplaint;
 import com.delhipolice.avishigoyal.delhipolice.R;
 import com.google.android.gms.common.api.CommonStatusCodes;
 
@@ -97,18 +99,12 @@ public class ComplainFragment extends android.support.v4.app.Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_complain, container, false);
 
-        register=view.findViewById(R.id.Register);
-        register.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getContext(),"Complain lodged",Toast.LENGTH_SHORT).show();
-            }
-        });
+
 
         statusMessage = (TextView)view.findViewById(R.id.status_message);
         textValue = (TextView)view.findViewById(R.id.text_value);
         useFlash = (CompoundButton) view.findViewById(R.id.use_flash);
-            TextView d1 = view.findViewById(R.id.Date);
+            final TextView d1 = view.findViewById(R.id.Date);
         thiscontext = container.getContext();
 //        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
 //        String currentDateandTime = sdf.format(new Date());
@@ -140,7 +136,15 @@ public class ComplainFragment extends android.support.v4.app.Fragment {
 //            }
 //        });
 
-
+        register=view.findViewById(R.id.Register);
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                /*RegisterComplaint registerComplaint = new RegisterComplaint("1",tvAddress.getText().toString(),"pending",d1.getText().toString(),getContext());
+                registerComplaint.execute();*/
+                Toast.makeText(getContext(),"Complain lodged",Toast.LENGTH_SHORT).show();
+            }
+        });
 
         class GeocoderHandler extends Handler {
             @Override

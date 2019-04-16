@@ -66,9 +66,9 @@ public class MyPrefences {
         return pref.getString(TYPE_OF_USER,"1");
     }
 
-    public void setUserId(int userId){
+    public void setUserId(String userId){
 
-       editor.putInt(USER_ID,userId);
+       editor.putString(USER_ID,userId);
        editor.commit();
 
     }

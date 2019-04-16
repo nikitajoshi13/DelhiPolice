@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ListAdapter;
 import android.widget.TextView;
 
+import com.delhipolice.avishigoyal.delhipolice.Database.FetchComplaint;
 import com.delhipolice.avishigoyal.delhipolice.R;
 
 import java.util.ArrayList;
@@ -54,13 +55,17 @@ public class TabFragment extends Fragment {
         bc.setStatus("Completed");
 
         ArrayList<OurData> data =new ArrayList<>();
-        data.add(ab);
-        data.add(bc);
+        data.add(ab); //need to comment
+        data.add(bc); //need to comment
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.listRecyclerView);
-        ListAdapterr listAdapter = new ListAdapterr(getContext(),data);
-        recyclerView.setAdapter((RecyclerView.Adapter) listAdapter);
+        ListAdapterr listAdapter = new ListAdapterr(getContext(),data); //need to comment
+        recyclerView.setAdapter((RecyclerView.Adapter) listAdapter);   //need to comment
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
+
+        //database
+        /*FetchComplaint fetch = new FetchComplaint(getContext(),data,recyclerView);
+        fetch.execute();*/
 
         return view;
     }
