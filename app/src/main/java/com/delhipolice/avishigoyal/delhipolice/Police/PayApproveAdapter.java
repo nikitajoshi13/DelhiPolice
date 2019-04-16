@@ -57,6 +57,8 @@ public class PayApproveAdapter extends RecyclerView.Adapter<PayApproveAdapter.My
         myHolder.linearLayout.setVisibility(View.VISIBLE);
         myHolder.vendor.setText(listData.get(i).getVendor());
         myHolder.accept.setText("Accept");
+        myHolder.date.setText(listData.get(i).getDate());
+
         myHolder.accept.setVisibility(View.VISIBLE);
         myHolder.accept.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,7 +78,7 @@ public class PayApproveAdapter extends RecyclerView.Adapter<PayApproveAdapter.My
     }
 
     public class MyHolder extends RecyclerView.ViewHolder {
-        TextView complaint,location,trafficlight,comment,vendor;
+        TextView complaint,location,trafficlight,comment,vendor,date;
         Button accept;
         LinearLayout linearLayout;
         public MyHolder(@NonNull View itemView, final OnItemClickListener listener) {
@@ -90,6 +92,8 @@ public class PayApproveAdapter extends RecyclerView.Adapter<PayApproveAdapter.My
             vendor=itemView.findViewById(R.id.vendorid);
             linearLayout=itemView.findViewById(R.id.linearlay);
             linearLayout.invalidate();
+            date=itemView.findViewById(R.id.date);
+
 
 
         }

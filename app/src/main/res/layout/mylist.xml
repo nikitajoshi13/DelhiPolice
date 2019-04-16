@@ -1,63 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:id="@+id/mylistlinear"
-    android:layout_margin="20dp">
+    android:layout_margin="10dp">
 
-        <TextView
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardElevation="10dp"
+        android:padding="10dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/complaintid"
-            android:textSize="25dp"
-            android:textStyle="bold"
-            android:text="Complaint Id: 201903312345"
-            android:layout_marginBottom="15dp"
-            android:textColor="@color/colorTheme"/>
+            android:background="@drawable/dashed_border"
+            android:padding="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/complaintid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/colorTheme"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="2dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/location"
+                    android:tint="@color/colorTheme"
+                    />
+
+                <TextView
+                    android:id="@+id/locid"
+                    android:hint="Location ID"
+                    android:text="Location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:layout_marginRight="2dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="2dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_date"
+                    android:tint="@color/colorTheme"
+                    />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:hint="Location ID"
+                    android:text="dd-mm-yy"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:layout_marginRight="2dp"/>
+
+            </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+
         android:orientation="horizontal">
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
             android:adjustViewBounds="true"
             android:tint="@color/colorTheme"
-            android:src="@drawable/location" />
-        <TextView
-            android:layout_marginLeft="10dp"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/locid"
-            android:textSize="25dp"
-            android:hint="Location Id" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:adjustViewBounds="true"
             android:src="@drawable/id" />
         <TextView
-            android:layout_marginLeft="10dp"
-            android:layout_gravity="center"
-            android:layout_weight="1"
+
+            android:id="@+id/traffid"
+            android:hint="Traffic Light id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/traffid"
-            android:textSize="25dp"
-            android:hint="Traffic Light id" />
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:layout_marginRight="2dp"/>
 
     </LinearLayout>
 
@@ -65,21 +127,26 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_vertical"
         android:orientation="horizontal">
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
             android:adjustViewBounds="true"
             android:tint="@color/colorTheme"
             android:src="@drawable/comment" />
         <TextView
-            android:layout_marginLeft="10dp"
-            android:layout_gravity="center"
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:layout_marginRight="2dp"
             android:id="@+id/commid"
-            android:textSize="25dp"
+
             android:hint="Comment" />
 
     </LinearLayout>
@@ -91,17 +158,21 @@
         android:id="@+id/linearlay">
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
             android:adjustViewBounds="true"
+            android:tint="@color/colorTheme"
             android:src="@drawable/engineer" />
         <TextView
-            android:layout_marginLeft="10dp"
-            android:layout_gravity="center"
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:layout_marginRight="2dp"
             android:id="@+id/vendorid"
-            android:textSize="25dp"
             android:hint="Vendor" />
 
 
@@ -119,13 +190,14 @@
             android:adjustViewBounds="true"
             android:src="@drawable/engineer" />
         <TextView
-            android:layout_marginLeft="10dp"
-            android:layout_gravity="center"
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:layout_marginRight="2dp"
             android:id="@+id/officerid"
-            android:textSize="25dp"
             android:hint="Beat Officer" />
 
 
@@ -142,26 +214,6 @@
         android:visibility="gone"
         android:id="@+id/ll">
 
-        <TextView
-            android:id="@+id/status"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="3dp"
-            android:layout_marginRight="2dp"
-            android:text="Status"
-            android:textSize="18dp"
-            android:textColor="@color/colorTheme"/>
-
-        <ImageView
-            android:id="@+id/circle"
-            android:layout_width="18dp"
-            android:layout_height="18dp"
-            android:src="@drawable/circular"
-            android:visibility="visible"
-            android:layout_gravity="center"
-
-            />
     </LinearLayout>
     <LinearLayout
         android:layout_marginTop="10dp"
@@ -173,14 +225,13 @@
         <Button
             android:background="@color/colorTheme"
             android:textColor="#FFFFFF"
-            android:textSize="25dp"
+            android:textSize="20dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/btnstat"
             android:visibility="gone"
             />
     </LinearLayout>
-
-
-
 </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

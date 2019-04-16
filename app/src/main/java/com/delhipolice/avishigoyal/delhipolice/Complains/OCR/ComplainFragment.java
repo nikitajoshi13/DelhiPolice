@@ -21,6 +21,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.delhipolice.avishigoyal.delhipolice.R;
 import com.google.android.gms.common.api.CommonStatusCodes;
@@ -95,6 +96,14 @@ public class ComplainFragment extends android.support.v4.app.Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_complain, container, false);
+
+        register=view.findViewById(R.id.Register);
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(),"Complain lodged",Toast.LENGTH_SHORT).show();
+            }
+        });
 
         statusMessage = (TextView)view.findViewById(R.id.status_message);
         textValue = (TextView)view.findViewById(R.id.text_value);

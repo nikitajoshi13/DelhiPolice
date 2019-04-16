@@ -68,17 +68,6 @@ public class VComplainsAdapter extends RecyclerView.Adapter <VComplainsAdapter.M
         myHolder.trafficlight.setText(listData.get(i).getTraffic());
         myHolder.comment.setText(listData.get(i).getComments());
         myHolder.linearLayout.setVisibility(View.VISIBLE);
-        myHolder.stat.setText(listData.get(i).getStat());
-        s=listData.get(i).getStat();
-        //boolean result = stat.equals(s1);
-        if(s.equals(s1))
-        {
-            myHolder.sta.setColorFilter(Color.MAGENTA);
-        }
-        if(s.equals(s2))
-        {
-            myHolder.sta.setColorFilter(Color.RED );
-        }
         //myHolder.assignedto.setText("Assign To");
 
         //myHolder.assignedto.setVisibility(View.VISIBLE);
@@ -125,10 +114,7 @@ public class VComplainsAdapter extends RecyclerView.Adapter <VComplainsAdapter.M
             comment = itemView.findViewById(R.id.commid);
             linearLayout=itemView.findViewById(R.id.ll);
             linearLayout.invalidate();
-            stat=itemView.findViewById(R.id.status);
-            stat.setVisibility(View.VISIBLE);
-            sta=itemView.findViewById(R.id.circle);
-            sta.setVisibility(View.VISIBLE);
+
 
             assignedto = itemView.findViewById(R.id.btnstat);
 

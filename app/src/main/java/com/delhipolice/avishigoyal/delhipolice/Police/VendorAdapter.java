@@ -9,7 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.delhipolice.avishigoyal.delhipolice.Complains.ComplainLodge;
 import com.delhipolice.avishigoyal.delhipolice.R;
 
 import java.util.List;
@@ -51,7 +53,8 @@ public class VendorAdapter extends RecyclerView.Adapter<VendorAdapter.Myholders>
         myholder.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(obj,StatusButton.class);
+                Toast.makeText(obj,"Complain Assigned to a vendor" ,Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(obj, ComplainLodge.class);
                 obj.startActivity(intent);
             }
         });

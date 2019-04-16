@@ -53,6 +53,7 @@ public class NewAdapter extends RecyclerView.Adapter<NewAdapter.MyHolder> {
         myHolder.comment.setText(listData.get(i).getComments());
         myHolder.assignedto.setText("Assign To");
         myHolder.assignedto.setVisibility(View.VISIBLE);
+        myHolder.date.setText(listData.get(i).getDate());
 
         myHolder.assignedto.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,8 +70,9 @@ public class NewAdapter extends RecyclerView.Adapter<NewAdapter.MyHolder> {
     }
 
     public class MyHolder extends RecyclerView.ViewHolder {
-        TextView complaint,location,trafficlight,comment;
+        TextView complaint,location,trafficlight,comment,date;
         Button assignedto;
+
 
         public MyHolder(@NonNull View itemView, final OnItemClickListener listener) {
 
@@ -80,6 +82,7 @@ public class NewAdapter extends RecyclerView.Adapter<NewAdapter.MyHolder> {
             trafficlight=itemView.findViewById(R.id.traffid);
             comment=itemView.findViewById(R.id.commid);
             assignedto=itemView.findViewById(R.id.btnstat);
+            date=itemView.findViewById(R.id.date);
 
             //assignedto.invalidate();
             //vendor=itemView.findViewById(R.id.vendorid);

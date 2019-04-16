@@ -53,6 +53,8 @@ public class PayPendingAdapter extends RecyclerView.Adapter<PayPendingAdapter.My
         myHolder.comment.setText(listData.get(i).getComments());
         myHolder.linearLayout.setVisibility(View.VISIBLE);
         myHolder.vendor.setText(listData.get(i).getVendor());
+        myHolder.date.setText(listData.get(i).getDate());
+
     }
 
     @Override
@@ -61,7 +63,7 @@ public class PayPendingAdapter extends RecyclerView.Adapter<PayPendingAdapter.My
     }
 
     public class MyHolder extends RecyclerView.ViewHolder {
-        TextView complaint,location,trafficlight,comment,vendor;
+        TextView complaint,location,trafficlight,comment,vendor,date;
         LinearLayout linearLayout;
         public MyHolder(@NonNull View itemView, final OnItemClickListener listener) {
 
@@ -73,6 +75,8 @@ public class PayPendingAdapter extends RecyclerView.Adapter<PayPendingAdapter.My
             vendor=itemView.findViewById(R.id.vendorid);
             linearLayout=itemView.findViewById(R.id.linearlay);
             linearLayout.invalidate();
+            date=itemView.findViewById(R.id.date);
+
 
 
         }
