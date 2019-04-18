@@ -16,6 +16,7 @@ public class MyPrefences {
     private static final String TYPE_OF_USER = "TypeOfUser";
     private static final String NUMBER_OF_FRAGMENTS= "NumberOfFragments";
     private static final String USER_ID = "UserId";
+    private static final String COMPLAIN_ID = "ComplainId";
 
 
 
@@ -76,6 +77,15 @@ public class MyPrefences {
     public String getUserId(){
         return pref.getString(USER_ID,"1");
     }
+
+
+    public String getComplainId(){return pref.getString(COMPLAIN_ID,"0");}
+
+    public void setComplainId(String complainId){
+        editor.putString(COMPLAIN_ID,complainId);
+        editor.commit();
+    }
+
 
     public void setNumberOfFragments(String number)
     {

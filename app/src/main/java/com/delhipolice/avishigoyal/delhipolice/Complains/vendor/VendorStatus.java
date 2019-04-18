@@ -14,6 +14,7 @@ import android.util.Log;
 //import com.delhipolice.avishigoyal.delhipolice.Police.PayApproveAdapter;
 //import com.delhipolice.avishigoyal.delhipolice.Police.PayPendingAdapter;
 //import com.delhipolice.avishigoyal.delhipolice.Police.PendingAdapter;
+import com.delhipolice.avishigoyal.delhipolice.Database.FetchAllComplaintVendor;
 import com.delhipolice.avishigoyal.delhipolice.R;
 
 import java.util.ArrayList;
@@ -36,6 +37,15 @@ public class VendorStatus extends AppCompatActivity {
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
+
+        /*Intent intent = getIntent();
+        String value = intent.getStringExtra("Button");
+
+        ArrayList<OurData> data =new ArrayList<>();
+
+        //database
+        FetchAllComplaintVendor fetch = new FetchAllComplaintVendor(value,getApplicationContext(),data,recyclerView);
+        fetch.execute();*/
 
         listVendor= new ArrayList<>();
         l1=new ArrayList<>();

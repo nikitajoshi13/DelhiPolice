@@ -12,7 +12,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.delhipolice.avishigoyal.delhipolice.Complains.ComplainLodge;
+import com.delhipolice.avishigoyal.delhipolice.Database.UpdateStatus;
+import com.delhipolice.avishigoyal.delhipolice.Database.UpdateVendor;
 import com.delhipolice.avishigoyal.delhipolice.R;
+import com.delhipolice.avishigoyal.delhipolice.common.MyPrefences;
 
 import java.util.List;
 
@@ -56,6 +59,11 @@ public class VendorAdapter extends RecyclerView.Adapter<VendorAdapter.Myholders>
                 Toast.makeText(obj,"Complain Assigned to a vendor" ,Toast.LENGTH_SHORT).show();
                 Intent intent=new Intent(obj, ComplainLodge.class);
                 obj.startActivity(intent);
+               /* UpdateVendor updateVendor = new UpdateVendor(myholder.name.getText().toString(),obj);
+                updateVendor.execute();
+                MyPrefences myPrefences = new MyPrefences(obj);
+                UpdateStatus updateStatus = new UpdateStatus(myPrefences.getComplainId(),obj.getString(R.string.pending),obj);
+                updateStatus.execute();*/
             }
         });
 

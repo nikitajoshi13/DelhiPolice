@@ -18,6 +18,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.delhipolice.avishigoyal.delhipolice.Database.UpdateStatus;
 import com.delhipolice.avishigoyal.delhipolice.Police.OurData;
 import com.delhipolice.avishigoyal.delhipolice.R;
 
@@ -53,7 +54,7 @@ public class PendingAdapter extends RecyclerView.Adapter<PendingAdapter.MyHolder
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyHolder myHolder, int i) {
+    public void onBindViewHolder(@NonNull final MyHolder myHolder, int i) {
         myHolder.complaint.setText(listData.get(i).getComplaints());
         myHolder.location.setText(listData.get(i).getLocation());
         myHolder.trafficlight.setText(listData.get(i).getTraffic());
@@ -73,6 +74,10 @@ public class PendingAdapter extends RecyclerView.Adapter<PendingAdapter.MyHolder
         myHolder.callto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                /*UpdateStatus updateStatus = new UpdateStatus(myHolder.complaint.getText().toString(),obj.getString(R.string.approve_payment),obj);
+                updateStatus.execute();*/
+
                 String phone="9716013005";
                 Intent callIntent = new Intent(Intent.ACTION_CALL);
                 String temp="tel:"+phone;
@@ -88,6 +93,7 @@ public class PendingAdapter extends RecyclerView.Adapter<PendingAdapter.MyHolder
                     return;
                 }
                 obj.startActivity(callIntent);
+
             }
         });
     }

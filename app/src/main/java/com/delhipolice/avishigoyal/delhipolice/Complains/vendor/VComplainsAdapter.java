@@ -21,9 +21,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.delhipolice.avishigoyal.delhipolice.Complains.ComplainLodge;
+import com.delhipolice.avishigoyal.delhipolice.Database.UpdateStatus;
 import com.delhipolice.avishigoyal.delhipolice.Police.NewAdapter;
 import com.delhipolice.avishigoyal.delhipolice.Police.PoliceVendorstatus;
 import com.delhipolice.avishigoyal.delhipolice.R;
+import com.delhipolice.avishigoyal.delhipolice.common.MyPrefences;
 
 import java.util.List;
 
@@ -62,7 +64,7 @@ public class VComplainsAdapter extends RecyclerView.Adapter <VComplainsAdapter.M
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyHolder myHolder, final int i) {
+    public void onBindViewHolder(@NonNull final MyHolder myHolder, final int i) {
         myHolder.complaint.setText(listData.get(i).getComplaints());
         myHolder.location.setText(listData.get(i).getLocation());
         myHolder.trafficlight.setText(listData.get(i).getTraffic());
@@ -82,6 +84,9 @@ public class VComplainsAdapter extends RecyclerView.Adapter <VComplainsAdapter.M
                 intent.setClass(obj,ComplainLodge.class);
                 obj.startActivity(intent);
                 Toast.makeText(obj,"This task is completed",Toast.LENGTH_SHORT).show();
+
+                //UpdateStatus updateStatus = new UpdateStatus(myHolder.complaint.getText().toString(),obj.getString(R.string.pending_payment),obj);
+                //updateStatus.execute();
 
 
 //                Fragment fragment = (Fragment) VendorFirst.newInstance(0);

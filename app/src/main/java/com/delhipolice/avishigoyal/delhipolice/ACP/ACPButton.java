@@ -83,6 +83,7 @@ public class ACPButton extends Fragment {
             public void onClick(View v) {
                 Intent intent=new Intent(getContext(), ACP.class);
                 intent.putExtra("Button1","1");
+                //intent.putExtra("Button",getString(R.string.approve_payment));
                 startActivity(intent);
             }
         });
@@ -92,6 +93,7 @@ public class ACPButton extends Fragment {
             public void onClick(View v) {
                 Intent intent=new Intent(getContext(),ACP.class);
                 intent.putExtra("Button1","2");
+                //intent.putExtra("Button",getString(R.string.pending_payment));
                 startActivity(intent);
             }
         });
@@ -100,6 +102,7 @@ public class ACPButton extends Fragment {
             public void onClick(View v) {
                 Intent intent=new Intent(getContext(),ACP.class);
                 intent.putExtra("Button1","3");
+                //intent.putExtra("Button",getString(R.string.completed));
                 startActivity(intent);
             }
         });

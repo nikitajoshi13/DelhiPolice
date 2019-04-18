@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.delhipolice.avishigoyal.delhipolice.ACP.OurData;
+import com.delhipolice.avishigoyal.delhipolice.Database.FetchAllComplaintACP;
 import com.delhipolice.avishigoyal.delhipolice.R;
 
 import java.util.ArrayList;
@@ -28,6 +29,15 @@ public class ACP extends AppCompatActivity {
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
+
+        /*Intent intent = getIntent();
+        String value = intent.getStringExtra("Button");
+
+        ArrayList<OurData> data =new ArrayList<>();
+
+        //database
+        FetchAllComplaintACP fetch = new FetchAllComplaintACP(value,getApplicationContext(),data,recyclerView);
+        fetch.execute();*/
 
         listMineList = new ArrayList<>();
         l1=new ArrayList<>();

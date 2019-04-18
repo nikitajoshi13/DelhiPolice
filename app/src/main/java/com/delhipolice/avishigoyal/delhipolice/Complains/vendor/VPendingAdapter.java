@@ -18,7 +18,7 @@ import com.delhipolice.avishigoyal.delhipolice.R;
 import java.util.ArrayList;
 import java.util.List;
 
-class VPendingAdapter extends RecyclerView.Adapter <VPendingAdapter.MyHolder>{
+public class VPendingAdapter extends RecyclerView.Adapter <VPendingAdapter.MyHolder>{
     private OnItemClickListener mlistener;
 
     public interface OnItemClickListener {

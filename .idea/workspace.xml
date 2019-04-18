@@ -11,16 +11,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5f4b85d-4932-4a00-abce-7808f19d95b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/FetchAllComplaintACP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/FetchAllComplaintVendor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/UpdateStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/UpdateVendor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/History/ListAdapterr.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/History/ListAdapterr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/History/TabFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/History/TabFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/ACP/ACP.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/ACP/ACP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/ACP/ACPButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/ACP/ACPButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/ACP/PendingAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/ACP/PendingAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/vendor/VComplainsAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/vendor/VComplainsAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/vendor/VPendingAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/vendor/VPendingAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/vendor/VendorFirst.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/vendor/VendorFirst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/vendor/VendorStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/vendor/VendorStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/NewAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/NewAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/VendorAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/VendorAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/common/MyPrefences.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/common/MyPrefences.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/classes/" />
@@ -141,62 +147,60 @@
     <session id="-1566672612">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2349" />
-          <entry key="txt" value="9" />
+          <entry key="java" value="3450" />
+          <entry key="txt" value="11" />
           <entry key="xml" value="197" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2349" />
-          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="JAVA" value="3450" />
+          <entry key="PLAIN_TEXT" value="11" />
           <entry key="XML" value="197" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gradle" value="3" />
-          <entry key="java" value="60" />
-          <entry key="xml" value="6" />
+          <entry key="java" value="125" />
+          <entry key="xml" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="3" />
-          <entry key="JAVA" value="60" />
-          <entry key="XML" value="6" />
+          <entry key="JAVA" value="125" />
+          <entry key="XML" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.38" value="1" />
+          <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/PoliceStatusList.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/ACP/ACPButton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+            <state relative-caret-position="416">
+              <caret line="104" column="18" selection-start-line="104" selection-start-column="18" selection-end-line="104" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/History/ListAdapterr.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/vendor/VendorFirst.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-              <folding>
-                <element signature="method#onCreateViewHolder#0;class#ListAdapterr#0" />
-              </folding>
+            <state relative-caret-position="307">
+              <caret line="114" column="64" lean-forward="true" selection-start-line="114" selection-start-column="64" selection-end-line="114" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -223,7 +227,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/dashed_border.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/OurData.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/NewAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/PendingAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/PayPendingAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/PayApproveAdapter.java" />
@@ -232,11 +235,8 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_status_button.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/vendor_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/mylist.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/vendor/VComplainsAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/vendor/OurData.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/VendorAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/common/MyPrefences.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/Login.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/RegisterComplaint.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
@@ -251,6 +251,20 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/PoliceStatusList.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/History/TabFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/History/ListAdapterr.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/common/MyPrefences.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/UpdateVendor.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/UpdateStatus.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/vendor/VendorFirst.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/vendor/VendorStatus.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/vendor/VPendingAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/FetchAllComplaintVendor.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/FetchAllComplaintACP.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/vendor/VComplainsAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/ACP/PendingAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/NewAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/VendorAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/ACP/ACP.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/ACP/ACPButton.java" />
       </list>
     </option>
   </component>
@@ -265,6 +279,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -286,6 +302,28 @@
             <path>
               <item name="DelhiPolice" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="delhipolice" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ACP" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DelhiPolice" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="delhipolice" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="Complains" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DelhiPolice" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="delhipolice" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="Complains" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DelhiPolice" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
             <path>
@@ -296,9 +334,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -419,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555602403315</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="database 4">
+      <created>1555602585217</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1555602585217</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -437,21 +480,21 @@
       <window_info anchor="bottom" id="Run" order="0" weight="0.32844576" />
       <window_info anchor="bottom" id="Logcat" order="1" weight="0.3295082" />
       <window_info anchor="bottom" id="TODO" order="2" />
-      <window_info anchor="bottom" id="Android Profiler" order="3" />
+      <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Debug" order="4" />
       <window_info anchor="bottom" id="Terminal" order="5" sideWeight="0.4993573" weight="0.32844576" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5015129" side_tool="true" weight="0.32786885" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Build" order="8" sideWeight="0.4993573" weight="0.32786885" />
       <window_info anchor="bottom" id="Flutter Performance" order="9" side_tool="true" />
-      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Gradle" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Preview" order="5" weight="0.3290469" />
-      <window_info anchor="right" id="Flutter Inspector" order="6" />
-      <window_info anchor="right" id="Flutter Outline" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Gradle" order="1" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Preview" order="4" weight="0.3290469" />
+      <window_info anchor="right" id="Flutter Inspector" order="5" />
+      <window_info anchor="right" id="Flutter Outline" order="6" />
+      <window_info anchor="right" id="Device File Explorer" order="7" side_tool="true" weight="0.32980332" />
     </layout>
     <layout-to-restore>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
@@ -489,150 +532,13 @@
     <MESSAGE value="ui" />
     <MESSAGE value="database" />
     <MESSAGE value="database3" />
-    <option name="LAST_COMMIT_MESSAGE" value="database3" />
+    <MESSAGE value="database 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="database 4" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/os/Message.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/OCR/LoggedComplain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_complain_lodge.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/ACP/ACP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/dashed_border.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/vendorlist.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="96" column="28" selection-start-line="96" selection-start-column="28" selection-end-line="96" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/vendor/VendorStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/vendor/VendorFirst.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="80" column="55" lean-forward="true" selection-start-line="80" selection-start-column="55" selection-end-line="80" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_status_button.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="8" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_item.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/vendor_main.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/vendor/OurData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/vendor/VComplainsAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/mylist.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="939">
-          <caret line="227" column="32" selection-start-line="227" selection-start-column="32" selection-end-line="227" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="103" column="53" selection-start-line="103" selection-start-column="33" selection-end-line="103" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/SplashScreen/SlpashScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_slpash_screen.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_complain.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-659">
-          <caret line="68" column="37" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/vendor/VendorFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_tab.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/common/MyPrefences.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
-        </state>
-      </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Login/RegisterActivity.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -642,7 +548,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
           <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
@@ -651,6 +556,7 @@
           </folding>
         </state>
       </provider>
+      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/ConnectionClass.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -677,13 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="56" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/NewAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="55" column="50" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -751,55 +650,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/OurData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding>
-            <element signature="e#287#288#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_police_status_list.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="53" column="69" selection-start-line="53" selection-start-column="69" selection-end-line="53" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/FetchAllComplaint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="70" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3332#3370#0" expanded="true" />
-            <element signature="e#3533#3568#0" expanded="true" />
-            <element signature="e#3741#3778#0" expanded="true" />
-            <element signature="e#3946#3989#0" expanded="true" />
-            <element signature="e#4159#4202#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/Register.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/VendorAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="55" column="67" selection-start-line="55" selection-start-column="67" selection-end-line="55" selection-end-column="67" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/VendorData.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -808,34 +661,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/FetchVendor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="86" column="38" lean-forward="true" selection-start-line="86" selection-start-column="38" selection-end-line="86" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/StatusButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1290">
-          <caret line="128" column="43" selection-start-line="128" selection-start-column="43" selection-end-line="128" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Login/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
           <caret line="225" column="29" lean-forward="true" selection-start-line="225" selection-start-column="29" selection-end-line="225" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/PoliceVendorstatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -851,18 +680,252 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/History/ListAdapterr.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        <state relative-caret-position="204">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
           <folding>
             <element signature="method#onCreateViewHolder#0;class#ListAdapterr#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/PoliceStatusList.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/vendor/VCompletedAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/ACP/CompleteAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_acp.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/vendorlist.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/vendor_status.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_vendor.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_police_vendorstatus.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/OurData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
-          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+          <folding>
+            <element signature="e#260#261#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/vendor/VendorFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-568">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/Register.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="53" column="69" selection-start-line="53" selection-start-column="69" selection-end-line="53" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/FetchVendor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="76" column="29" lean-forward="true" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/common/MyPrefences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="84" column="36" selection-start-line="84" selection-start-column="36" selection-end-line="84" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/UpdateVendor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="77" column="5" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="77" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/PoliceVendorstatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/StatusButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="89" column="18" lean-forward="true" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/FetchAllComplaint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="115" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="115" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/PoliceStatusList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1651">
+          <caret line="43" column="26" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="43" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/FetchAllComplaintVendor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="99" column="5" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="99" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/ACP/PayApproveAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-234">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/vendor/VComplainsAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="88" column="18" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/ACP/PendingAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="77" column="141" selection-start-line="77" selection-start-column="141" selection-end-line="77" selection-end-column="141" />
+          <folding>
+            <element signature="e#2543#3874#0" expanded="true" />
+            <element signature="e#3873#3874#0" expanded="true" />
+            <element signature="e#3928#3929#0" expanded="true" />
+            <element signature="e#3966#3967#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/FetchAllComplaintACP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2773#2816#0" expanded="true" />
+            <element signature="e#2981#3018#0" expanded="true" />
+            <element signature="e#3248#3291#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/NewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-53">
+          <caret line="64" column="18" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/VendorAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="65" column="41" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
+          <folding>
+            <element signature="e#1857#2557#0" expanded="true" />
+            <element signature="e#2556#2557#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/vendor/VPendingAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1140">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/ACP/ACP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/UpdateStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="60" column="50" selection-start-line="60" selection-start-column="50" selection-end-line="60" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/vendor/VendorStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="47" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/ACP/ACPButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="104" column="18" selection-start-line="104" selection-start-column="18" selection-end-line="104" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/vendor/VendorFirst.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="114" column="64" lean-forward="true" selection-start-line="114" selection-start-column="64" selection-end-line="114" selection-end-column="64" />
         </state>
       </provider>
     </entry>

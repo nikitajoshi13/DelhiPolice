@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.delhipolice.avishigoyal.delhipolice.R;
+import com.delhipolice.avishigoyal.delhipolice.common.MyPrefences;
 
 import java.util.List;
 
@@ -25,12 +26,14 @@ public class NewAdapter extends RecyclerView.Adapter<NewAdapter.MyHolder> {
     Context obj;
     int res;
     private List<OurData> listData;
+    MyPrefences myPrefences;
 
 
     public NewAdapter(Context obj, List listData)
     {
         this.obj=obj;
         this.listData=listData;
+        myPrefences = new MyPrefences(obj);
     }
     public void setOnItemClickListener(OnItemClickListener listener){
         mlistener=listener;
@@ -59,7 +62,9 @@ public class NewAdapter extends RecyclerView.Adapter<NewAdapter.MyHolder> {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(obj,PoliceVendorstatus.class);
+                //myPrefences.setComplainId(listData.get(i).getComplaints());
                 obj.startActivity(intent);
+
             }
         });
     }
