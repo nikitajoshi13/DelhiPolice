@@ -9,6 +9,8 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.delhipolice.avishigoyal.delhipolice.Complains.History.ListAdapterr;
+import com.delhipolice.avishigoyal.delhipolice.Database.FetchAllComplaint;
+import com.delhipolice.avishigoyal.delhipolice.Database.FetchComplaint;
 import com.delhipolice.avishigoyal.delhipolice.R;
 
 import java.util.ArrayList;
@@ -30,6 +32,16 @@ public class PoliceStatusList extends AppCompatActivity {
         recyclerView = findViewById(R.id.policerecycle);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
+
+
+        /*Intent intent = getIntent();
+        String value = intent.getStringExtra("Button");
+
+        ArrayList<OurData> data =new ArrayList<>();
+
+        //database
+        FetchAllComplaint fetch = new FetchAllComplaint(value,getApplicationContext(),data,recyclerView);
+        fetch.execute();*/
 
 
         listMineList = new ArrayList<>();

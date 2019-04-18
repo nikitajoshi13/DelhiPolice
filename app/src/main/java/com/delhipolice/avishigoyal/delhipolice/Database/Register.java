@@ -55,7 +55,14 @@ public class Register extends AsyncTask<String,String,String> {
                 con.setAutoCommit(true);
                 while(rs.next()) {
                     int user_id = Integer.parseInt(rs.getString("sno"));
+                    String user_type = rs.getString("user");
                     myPrefences.setUserId(String.valueOf(user_id));
+                    if(user_type.equals("3")){
+                        PreparedStatement stt1 = con.prepareStatement("insert into vendor(assigned,total,UserID) values(?,?,?)");
+                        stt1.setInt(1,0);
+                        stt1.setInt(2,0);
+                        stt1.setInt(3,user_id);
+                    }
                     res = "Successfull";
                     isSuccess = true;
                     }

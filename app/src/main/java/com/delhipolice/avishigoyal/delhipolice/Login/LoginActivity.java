@@ -220,8 +220,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
             myPrefences.setIsNotLogin(false);
             //dont change database code
-            /*Login login = new Login(email, password,getApplicationContext());
-            login.execute("");*/
+            //Login login = new Login(email, password,getApplicationContext());
+            //login.execute("");
             Intent i = new Intent(LoginActivity.this, ComplainLodge.class);
             startActivity(i);
         }

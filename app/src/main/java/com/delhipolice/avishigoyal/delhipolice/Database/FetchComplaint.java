@@ -25,7 +25,7 @@ public class FetchComplaint extends AsyncTask<String,String,String> {
         private ConnectionClass connectionClass;
         private ArrayList<OurData> ourData = new ArrayList<>();
         OurData data;
-    ListAdapterr listAdapter;
+        ListAdapterr listAdapter;
         Activity activity;
 
         public FetchComplaint(Context context,ArrayList<OurData> ourData,RecyclerView recyclerView){

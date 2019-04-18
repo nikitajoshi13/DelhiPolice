@@ -30,6 +30,7 @@ import com.google.android.gms.common.api.CommonStatusCodes;
 
 import java.text.DateFormat;
 import java.util.Calendar;
+import java.util.UUID;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -57,6 +58,7 @@ public class ComplainFragment extends android.support.v4.app.Fragment {
     Context thiscontext;
     private static final int REQUEST_CODE_PERMISSION = 2;
     String mPermission = Manifest.permission.ACCESS_FINE_LOCATION;
+
 
 //    private Calendar calendar;
 //    private SimpleDateFormat dateFormat;
@@ -136,13 +138,15 @@ public class ComplainFragment extends android.support.v4.app.Fragment {
 //            }
 //        });
 
+        final UUID uuid = UUID.randomUUID();
+
         register=view.findViewById(R.id.Register);
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*RegisterComplaint registerComplaint = new RegisterComplaint("1",tvAddress.getText().toString(),"pending",d1.getText().toString(),getContext());
-                registerComplaint.execute();*/
-                Toast.makeText(getContext(),"Complain lodged",Toast.LENGTH_SHORT).show();
+                RegisterComplaint registerComplaint = new RegisterComplaint(uuid.toString(),tvAddress.getText().toString(),getString(R.string.new_status),d1.getText().toString(),getContext());
+                registerComplaint.execute();
+                //Toast.makeText(getContext(),"Complain lodged",Toast.LENGTH_SHORT).show();
             }
         });
 

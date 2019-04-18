@@ -6,6 +6,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.Toast;
 
+import com.delhipolice.avishigoyal.delhipolice.Database.FetchVendor;
 import com.delhipolice.avishigoyal.delhipolice.Police.NewAdapter;
 import com.delhipolice.avishigoyal.delhipolice.Police.OurData;
 import com.delhipolice.avishigoyal.delhipolice.Police.VendorAdapter;
@@ -30,6 +31,12 @@ public class PoliceVendorstatus extends AppCompatActivity {
         recyclerView = findViewById(R.id.vendorpolice);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
+
+        //ArrayList<VendorData> data =new ArrayList<>();
+
+        //database
+        //FetchVendor fetch = new FetchVendor(getApplicationContext(),data,recyclerView);
+        //fetch.execute();
 
         listMineList = new ArrayList<>();
         VendorData vendorData =new VendorData();
