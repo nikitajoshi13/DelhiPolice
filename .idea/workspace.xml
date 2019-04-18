@@ -11,8 +11,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5f4b85d-4932-4a00-abce-7808f19d95b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/FetchAllComplaint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/FetchVendor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/classAnalysis.bin" afterDir="false" />
@@ -20,19 +18,9 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/History/ListAdapterr.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/History/ListAdapterr.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/History/TabFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/History/TabFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/OCR/ComplainFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/OCR/ComplainFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/FetchComplaint.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/FetchComplaint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/Register.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Login/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Login/LoginActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/PoliceStatusList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/PoliceStatusList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/PoliceVendorstatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/PoliceVendorstatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/StatusButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/StatusButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/classes/" />
@@ -153,29 +141,29 @@
     <session id="-1566672612">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2308" />
-          <entry key="txt" value="8" />
+          <entry key="java" value="2349" />
+          <entry key="txt" value="9" />
           <entry key="xml" value="197" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2308" />
-          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="JAVA" value="2349" />
+          <entry key="PLAIN_TEXT" value="9" />
           <entry key="XML" value="197" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gradle" value="3" />
-          <entry key="java" value="58" />
+          <entry key="java" value="60" />
           <entry key="xml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="3" />
-          <entry key="JAVA" value="58" />
+          <entry key="JAVA" value="60" />
           <entry key="XML" value="6" />
         </counts>
       </usages-collector>
@@ -195,8 +183,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/PoliceStatusList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2550">
-              <caret line="164" column="9" lean-forward="true" selection-start-line="164" selection-start-column="9" selection-end-line="164" selection-end-column="9" />
+            <state relative-caret-position="525">
+              <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/History/ListAdapterr.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+              <folding>
+                <element signature="method#onCreateViewHolder#0;class#ListAdapterr#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -241,8 +241,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/RegisterComplaint.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/FetchComplaint.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/History/TabFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/History/ListAdapterr.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/OCR/ComplainFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/FetchAllComplaint.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Database/Register.java" />
@@ -251,6 +249,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Login/LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/PoliceVendorstatus.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/PoliceStatusList.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/History/TabFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/History/ListAdapterr.java" />
       </list>
     </option>
   </component>
@@ -412,11 +412,19 @@
       <option name="project" value="LOCAL" />
       <updated>1555437998383</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="database3">
+      <created>1555602403314</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1555602403315</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.32980332" />
@@ -480,7 +488,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ui" />
     <MESSAGE value="database" />
-    <option name="LAST_COMMIT_MESSAGE" value="database" />
+    <MESSAGE value="database3" />
+    <option name="LAST_COMMIT_MESSAGE" value="database3" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/os/Message.java" />
@@ -735,17 +744,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/History/ListAdapterr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="927">
-          <caret line="69" column="66" selection-start-line="69" selection-start-column="66" selection-end-line="69" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onCreateViewHolder#0;class#ListAdapterr#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/PayApproveAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-138">
@@ -759,16 +757,6 @@
           <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
           <folding>
             <element signature="e#287#288#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/History/TabFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -851,10 +839,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/History/TabFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Complains/History/ListAdapterr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding>
+            <element signature="method#onCreateViewHolder#0;class#ListAdapterr#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/delhipolice/avishigoyal/delhipolice/Police/PoliceStatusList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2550">
-          <caret line="164" column="9" lean-forward="true" selection-start-line="164" selection-start-column="9" selection-end-line="164" selection-end-column="9" />
+        <state relative-caret-position="525">
+          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
         </state>
       </provider>
     </entry>
