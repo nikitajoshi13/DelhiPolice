@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.delhipolice.avishigoyal.delhipolice.Database.UpdateStatus;
 import com.delhipolice.avishigoyal.delhipolice.Police.OurData;
 import com.delhipolice.avishigoyal.delhipolice.R;
 
@@ -47,7 +48,7 @@ public class PayApproveAdapter extends RecyclerView.Adapter<PayApproveAdapter.My
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyHolder myHolder, int i) {
+    public void onBindViewHolder(@NonNull final MyHolder myHolder, int i) {
         myHolder.complaint.setText(listData.get(i).getComplaints());
         myHolder.location.setText(listData.get(i).getLocation());
         myHolder.trafficlight.setText(listData.get(i).getTraffic());
@@ -56,6 +57,9 @@ public class PayApproveAdapter extends RecyclerView.Adapter<PayApproveAdapter.My
         myHolder.vendor.setText(listData.get(i).getVendor());
         myHolder.accept.setText("Accept");
         myHolder.accept.setVisibility(View.VISIBLE);
+
+        //UpdateStatus updateStatus = new UpdateStatus(myHolder.complaint.getText().toString(),obj.getString(R.string.completed),obj);
+        //updateStatus.execute();
     }
 
     @Override

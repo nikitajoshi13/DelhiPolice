@@ -13,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.delhipolice.avishigoyal.delhipolice.Complains.ComplainLodge;
+import com.delhipolice.avishigoyal.delhipolice.Database.UpdateStatus;
 import com.delhipolice.avishigoyal.delhipolice.R;
 
 import java.util.List;
@@ -49,7 +50,7 @@ public class PayApproveAdapter extends RecyclerView.Adapter<PayApproveAdapter.My
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyHolder myHolder, int i) {
+    public void onBindViewHolder(@NonNull final MyHolder myHolder, int i) {
         myHolder.complaint.setText(listData.get(i).getComplaints());
         myHolder.location.setText(listData.get(i).getLocation());
         myHolder.trafficlight.setText(listData.get(i).getTraffic());
@@ -68,6 +69,10 @@ public class PayApproveAdapter extends RecyclerView.Adapter<PayApproveAdapter.My
                 intent.setClass(obj, ComplainLodge.class);
                 obj.startActivity(intent);
                 Toast.makeText(obj, "Payment accepted", Toast.LENGTH_SHORT).show();
+
+
+                //UpdateStatus updateStatus = new UpdateStatus(myHolder.complaint.getText().toString(),obj.getString(R.string.pending_payment),obj);
+                //updateStatus.execute();
             }
         });
     }

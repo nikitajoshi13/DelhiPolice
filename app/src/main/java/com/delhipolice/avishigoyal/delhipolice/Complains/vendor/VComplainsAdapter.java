@@ -85,7 +85,7 @@ public class VComplainsAdapter extends RecyclerView.Adapter <VComplainsAdapter.M
                 obj.startActivity(intent);
                 Toast.makeText(obj,"This task is completed",Toast.LENGTH_SHORT).show();
 
-                //UpdateStatus updateStatus = new UpdateStatus(myHolder.complaint.getText().toString(),obj.getString(R.string.pending_payment),obj);
+                //UpdateStatus updateStatus = new UpdateStatus(myHolder.complaint.getText().toString(),obj.getString(R.string.approve_payment),obj);
                 //updateStatus.execute();
 
 

@@ -80,7 +80,7 @@ public class FetchAllComplaintACP extends AsyncTask<String,String,String> {
     protected void onPostExecute(String result) {
 
         if (result.equals("Successfull")) {
-            if (status.equals(context.getString(R.string.pending_payment))) {
+            if (status.equals(context.getString(R.string.pending_payment))||status.equals(context.getString(R.string.pending))||status.equals(context.getString(R.string.new_status))) {
                 adapter = new PendingAdapter(context, ourData);
                 recyclerView.setAdapter(adapter);
             } else if (status.equals(context.getString(R.string.completed))) {
