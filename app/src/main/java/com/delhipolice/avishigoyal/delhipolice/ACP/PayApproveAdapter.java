@@ -11,6 +11,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.delhipolice.avishigoyal.delhipolice.Database.UpdateStatus;
+import com.delhipolice.avishigoyal.delhipolice.Database.UpdateVendor;
+import com.delhipolice.avishigoyal.delhipolice.Database.UpdateVendorACP;
 import com.delhipolice.avishigoyal.delhipolice.Police.OurData;
 import com.delhipolice.avishigoyal.delhipolice.R;
 
@@ -58,8 +60,11 @@ public class PayApproveAdapter extends RecyclerView.Adapter<PayApproveAdapter.My
         myHolder.accept.setText("Accept");
         myHolder.accept.setVisibility(View.VISIBLE);
 
+        //UpdateVendorACP updateVendor = new UpdateVendorACP(myHolder.vendor.getText().toString(),obj);
+        //updateVendor.execute();
         //UpdateStatus updateStatus = new UpdateStatus(myHolder.complaint.getText().toString(),obj.getString(R.string.completed),obj);
         //updateStatus.execute();
+
     }
 
     @Override
