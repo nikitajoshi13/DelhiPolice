@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.delhipolice.avishigoyal.delhipolice.Database.UpdateStatus;
 import com.delhipolice.avishigoyal.delhipolice.Database.UpdateVendor;
@@ -59,6 +60,14 @@ public class PayApproveAdapter extends RecyclerView.Adapter<PayApproveAdapter.My
         myHolder.vendor.setText(listData.get(i).getVendor());
         myHolder.accept.setText("Accept");
         myHolder.accept.setVisibility(View.VISIBLE);
+
+        myHolder.accept.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(obj, "Accepted", Toast.LENGTH_SHORT).show();
+            }
+        });
+
 
         //UpdateVendorACP updateVendor = new UpdateVendorACP(myHolder.vendor.getText().toString(),obj);
         //updateVendor.execute();
