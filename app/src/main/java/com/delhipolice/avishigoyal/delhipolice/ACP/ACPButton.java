@@ -46,15 +46,13 @@ public class ACPButton extends Fragment {
      * this fragment using the provided parameters.
      *
      * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
      * @return A new instance of fragment ACPButton.
      */
     // TODO: Rename and change types and number of parameters
-    public static ACPButton newInstance(String param1, String param2) {
+    public static ACPButton newInstance(int param1) {
         ACPButton fragment = new ACPButton();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
+        args.putInt(ARG_PARAM1, param1);
         fragment.setArguments(args);
         return fragment;
     }
@@ -106,6 +104,8 @@ public class ACPButton extends Fragment {
                 startActivity(intent);
             }
         });
+
+
         return view;
     }
 
@@ -119,12 +119,6 @@ public class ACPButton extends Fragment {
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        if (context instanceof OnFragmentInteractionListener) {
-            mListener = (OnFragmentInteractionListener) context;
-        } else {
-            throw new RuntimeException(context.toString()
-                    + " must implement OnFragmentInteractionListener");
-        }
     }
 
     @Override

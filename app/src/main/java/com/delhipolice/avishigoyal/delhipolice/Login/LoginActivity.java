@@ -410,6 +410,12 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                     myPrefences.setTypeOfUser("3");
                     break;
 
+
+            case R.id.acp:
+                if(checked)
+                    myPrefences.setTypeOfUser("4");
+                    break;
+
         }
     }
 }

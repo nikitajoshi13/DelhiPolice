@@ -25,7 +25,7 @@ public class ACP extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_acp);
 
-        recyclerView = findViewById(R.id.policerecycle);
+        recyclerView = findViewById(R.id.acp);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
@@ -43,8 +43,6 @@ public class ACP extends AppCompatActivity {
         l1=new ArrayList<>();
         l2=new ArrayList<>();
         l3=new ArrayList<>();
-
-
 
         OurData ourData1 = new OurData();
         OurData ourData2 = new OurData();
@@ -76,9 +74,6 @@ public class ACP extends AppCompatActivity {
         ourData3.setVendor("Madina vendor");
         ourData3.setBeatofficer("Officer Bla");
 
-
-
-
         for (int i=0;i<listMineList.size();i++)
         {
             if(listMineList.get(i).getStatus().equals("Pay Approve")){
@@ -87,7 +82,7 @@ public class ACP extends AppCompatActivity {
             else if(listMineList.get(i).getStatus().equals("Pending")) {
                 l2.add(listMineList.get(i));
             }
-            else if(listMineList.get(i).getStatus().equals("Complete")){
+            else if(listMineList.get(i).getStatus().equals("Complete")) {
                 l3.add(listMineList.get(i));
             }
             else {

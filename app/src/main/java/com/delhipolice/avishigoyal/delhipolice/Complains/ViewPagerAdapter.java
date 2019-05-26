@@ -5,6 +5,8 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.util.Log;
 
+import com.delhipolice.avishigoyal.delhipolice.ACP.ACP;
+import com.delhipolice.avishigoyal.delhipolice.ACP.ACPButton;
 import com.delhipolice.avishigoyal.delhipolice.Complains.History.TabFragment;
 import com.delhipolice.avishigoyal.delhipolice.Complains.OCR.ComplainFragment;
 import com.delhipolice.avishigoyal.delhipolice.Complains.vendor.VendorFirst;
@@ -35,6 +37,9 @@ class ViewPagerAdapter extends FragmentPagerAdapter {
 
         if(position==2 && userType.equals("3"))
             return VendorFirst.newInstance(position);
+
+        if(position==2 && userType.equals("4"))
+            return ACPButton.newInstance(position);
 
         else
             return ComplainFragment.newInstance(position);

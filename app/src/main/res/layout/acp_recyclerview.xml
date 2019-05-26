@@ -3,8 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:id="@+id/acp"
     android:layout_height="match_parent"
-    tools:context=".ACP.ACP">
+    android:orientation="vertical"
+    android:id="@+id/policerecycle">
 
 </android.support.v7.widget.RecyclerView>
+
