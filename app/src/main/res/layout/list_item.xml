@@ -104,7 +104,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="5dp"
-                    android:text="Status"
                     android:textSize="18dp"
                     android:textColor="#000000"/>
 
