@@ -48,7 +48,6 @@
     <string name="clipboard_copy_successful_message">Copied to clipboard.</string>
 
 
-
     <!-- Status Strings -->
     <string name="new_status">New Status</string>
     <string name="pending">Pending</string>

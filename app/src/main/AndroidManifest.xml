@@ -12,12 +12,9 @@
     <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.MIN_TIME_FOR_UPDATE"/>
-    <uses-permission android:name="android.permission.MIN_DISTANCE_FOR_UPDATE"/>
+    <uses-permission android:name="android.permission.MIN_TIME_FOR_UPDATE" />
+    <uses-permission android:name="android.permission.MIN_DISTANCE_FOR_UPDATE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-
-
-
 
     <uses-feature android:name="android.hardware.camera" />
 
@@ -28,7 +25,7 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ACP.ACP"></activity>
+        <activity android:name=".ACP.ACP" />
         <activity android:name=".Police.PoliceVendorstatus" />
         <activity android:name=".Complains.vendor.VendorStatus" />
         <activity android:name=".Police.PoliceStatusList" />

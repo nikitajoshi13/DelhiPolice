@@ -11,12 +11,13 @@ import com.delhipolice.avishigoyal.delhipolice.Complains.History.TabFragment;
 import com.delhipolice.avishigoyal.delhipolice.Complains.OCR.ComplainFragment;
 import com.delhipolice.avishigoyal.delhipolice.Complains.vendor.VendorFirst;
 import com.delhipolice.avishigoyal.delhipolice.Police.StatusButton;
+import com.delhipolice.avishigoyal.delhipolice.ProfilePage.ProfileFragment;
 import com.delhipolice.avishigoyal.delhipolice.common.MyPrefences;
 
 class ViewPagerAdapter extends FragmentPagerAdapter {
 
 
-    private String title[] = {"Click", "History" ,"Status"};
+    private String title[] = {"Click", "History" ,"Status","Profile"};
     MyPrefences myPrefences;
 
     public ViewPagerAdapter(FragmentManager manager,MyPrefences myPrefences)
@@ -41,6 +42,15 @@ class ViewPagerAdapter extends FragmentPagerAdapter {
         if(position==2 && userType.equals("4"))
             return ACPButton.newInstance(position);
 
+        if(position==2 && userType.equals("1"))
+            return ProfileFragment.newInstance(position);
+
+        if(position==3 && (userType.equals("2")||userType.equals("3")||userType.equals("4")))
+        {
+            return ProfileFragment.newInstance(position);
+        }
+
+
         else
             return ComplainFragment.newInstance(position);
     }
@@ -52,14 +62,14 @@ class ViewPagerAdapter extends FragmentPagerAdapter {
 
         if(userType.equals("1"))
         {
-             count=2;
+             count=3;
             Log.e("status","run");
 
         }
 
         else
         {
-         count=3;
+         count=4;
         }
         return count;
     }
