@@ -88,8 +88,8 @@ public class VendorFirst extends Fragment{
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getContext(),VendorStatus.class);
-                intent.putExtra("Button","1");
-                //intent.putExtra("Button",getString(R.string.pending));
+                //intent.putExtra("Button","1");
+                intent.putExtra("Button",getString(R.string.pending));
                 startActivity(intent);
             }
         });
@@ -98,8 +98,8 @@ public class VendorFirst extends Fragment{
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getContext(),VendorStatus.class);
-                intent.putExtra("Button","2");
-                //intent.putExtra("Button",getString(R.string.pending_payment));
+                //intent.putExtra("Button","2");
+                intent.putExtra("Button",getString(R.string.pending_payment));
                 startActivity(intent);
             }
         });
@@ -107,8 +107,8 @@ public class VendorFirst extends Fragment{
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getContext(),VendorStatus.class);
-                intent.putExtra("Button","3");
-                //intent.putExtra("Button",getString(R.string.completed));
+                //intent.putExtra("Button","3");
+                intent.putExtra("Button",getString(R.string.completed));
                 startActivity(intent);
             }
         });

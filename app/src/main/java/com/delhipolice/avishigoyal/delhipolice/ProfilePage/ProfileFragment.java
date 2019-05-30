@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.delhipolice.avishigoyal.delhipolice.Database.LogOut;
 import com.delhipolice.avishigoyal.delhipolice.R;
 
 /**
@@ -81,7 +82,9 @@ public class ProfileFragment extends Fragment {
 
     void logout()
     {
-        Toast.makeText(getContext(),"your logged out",Toast.LENGTH_SHORT).show();
+        Toast.makeText(getContext(),"you are logged out",Toast.LENGTH_SHORT).show();
+        LogOut logOut = new LogOut(getContext());
+        logOut.execute();
     }
 
     // TODO: Rename method, update argument and hook method into UI event

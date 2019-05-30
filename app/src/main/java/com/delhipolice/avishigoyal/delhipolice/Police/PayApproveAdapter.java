@@ -65,14 +65,14 @@ public class PayApproveAdapter extends RecyclerView.Adapter<PayApproveAdapter.My
             @Override
             public void onClick(View v) {
                 //  Intent intent = new Intent(obj,.class);
-                Intent intent = new Intent();
-                intent.setClass(obj, ComplainLodge.class);
-                obj.startActivity(intent);
-                Toast.makeText(obj, "Payment accepted", Toast.LENGTH_SHORT).show();
+                //Intent intent = new Intent();
+                //intent.setClass(obj, ComplainLodge.class);
+                //obj.startActivity(intent);
+                //Toast.makeText(obj, "Payment accepted", Toast.LENGTH_SHORT).show();
 
 
-                //UpdateStatus updateStatus = new UpdateStatus(myHolder.complaint.getText().toString(),obj.getString(R.string.pending_payment),obj);
-                //updateStatus.execute();
+                UpdateStatus updateStatus = new UpdateStatus(myHolder.complaint.getText().toString(),obj.getString(R.string.pending_payment),obj);
+                updateStatus.execute();
             }
         });
     }

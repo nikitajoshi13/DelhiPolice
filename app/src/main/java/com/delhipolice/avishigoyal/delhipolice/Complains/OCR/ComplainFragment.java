@@ -21,9 +21,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.delhipolice.avishigoyal.delhipolice.Database.Register;
 import com.delhipolice.avishigoyal.delhipolice.Database.RegisterComplaint;
 import com.delhipolice.avishigoyal.delhipolice.R;
 import com.google.android.gms.common.api.CommonStatusCodes;

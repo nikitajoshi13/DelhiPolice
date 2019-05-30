@@ -10,6 +10,8 @@ import com.delhipolice.avishigoyal.delhipolice.Complains.ComplainLodge;
 import com.delhipolice.avishigoyal.delhipolice.Police.OurData;
 import com.delhipolice.avishigoyal.delhipolice.Police.VendorAdapter;
 import com.delhipolice.avishigoyal.delhipolice.Police.VendorData;
+import com.delhipolice.avishigoyal.delhipolice.R;
+import com.delhipolice.avishigoyal.delhipolice.common.MyPrefences;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -51,6 +53,12 @@ public class UpdateVendor extends AsyncTask<String,String,String> {
                     PreparedStatement stt = con.prepareStatement("update vendor set assigned = assigned+1 where UserID=?");
                     stt.setInt(1,Integer.parseInt(id));
                     stt.executeUpdate();
+                    stt = con.prepareStatement("update complain set Vendor = ? where ID=?");
+                    stt.setInt(1,Integer.parseInt(id));
+                    MyPrefences myPrefences = new MyPrefences(context);
+                    String complain = myPrefences.getComplainId();
+                    stt.setString(2,complain);
+                    stt.executeUpdate();
                     res = "Successfull";
                 }
 
@@ -73,7 +81,7 @@ public class UpdateVendor extends AsyncTask<String,String,String> {
             context.startActivity(intent);
 
         }else{
-            Toast.makeText(context,"Error in register "+result, Toast.LENGTH_LONG).show();
+            Toast.makeText(context,"Error in update vendor "+result, Toast.LENGTH_LONG).show();
         }
     }
 

@@ -19,7 +19,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.delhipolice.avishigoyal.delhipolice.Database.UpdateStatus;
-import com.delhipolice.avishigoyal.delhipolice.Police.OurData;
+import com.delhipolice.avishigoyal.delhipolice.ACP.OurData;
 import com.delhipolice.avishigoyal.delhipolice.R;
 
 import java.util.List;
@@ -75,7 +75,8 @@ public class PendingAdapter extends RecyclerView.Adapter<PendingAdapter.MyHolder
             @Override
             public void onClick(View v) {
 
-
+                UpdateStatus updateStatus = new UpdateStatus(myHolder.complaint.getText().toString(),obj.getString(R.string.approve_payment),obj);
+                updateStatus.execute();
 
                 String phone="9716013005";
                 Intent callIntent = new Intent(Intent.ACTION_CALL);

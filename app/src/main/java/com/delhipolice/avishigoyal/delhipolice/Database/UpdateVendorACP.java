@@ -67,7 +67,7 @@ public class UpdateVendorACP extends AsyncTask<String,String,String> {
             context.startActivity(intent);
 
         } else {
-            Toast.makeText(context, "Error in register " + result, Toast.LENGTH_LONG).show();
+            Toast.makeText(context, "Error in update vendor acp " + result, Toast.LENGTH_LONG).show();
         }
     }
 }

@@ -80,13 +80,13 @@ public class VComplainsAdapter extends RecyclerView.Adapter <VComplainsAdapter.M
             @Override
             public void onClick(View v) {
               //  Intent intent = new Intent(obj,.class);
-                Intent intent=new Intent();
-                intent.setClass(obj,ComplainLodge.class);
-                obj.startActivity(intent);
-                Toast.makeText(obj,"This task is completed",Toast.LENGTH_SHORT).show();
+                //Intent intent=new Intent();
+                //intent.setClass(obj,ComplainLodge.class);
+                //obj.startActivity(intent);
+                //Toast.makeText(obj,"This task is completed",Toast.LENGTH_SHORT).show();
 
-                //UpdateStatus updateStatus = new UpdateStatus(myHolder.complaint.getText().toString(),obj.getString(R.string.approve_payment),obj);
-                //updateStatus.execute();
+                UpdateStatus updateStatus = new UpdateStatus(myHolder.complaint.getText().toString(),obj.getString(R.string.approve_payment),obj);
+                updateStatus.execute();
 
 
 //                Fragment fragment = (Fragment) VendorFirst.newInstance(0);

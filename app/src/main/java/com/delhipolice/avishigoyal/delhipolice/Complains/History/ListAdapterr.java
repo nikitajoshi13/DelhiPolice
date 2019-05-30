@@ -24,16 +24,16 @@ public class ListAdapterr extends RecyclerView.Adapter<ListAdapterr.MyHolder> {
     Context obj;
     int res;
     ArrayList<OurData> data;
-    String s1="Pending";
-    String s2="Completed";
-    //String status = "";
+    //String s1="Pending";
+    //String s2="Completed";
+    String status = "";
     String stat;
 
     public ListAdapterr(Context obj,ArrayList<OurData> data)
     {
         this.obj=obj;
         this.data=data;
-        //status=obj.getString(R.string.completed);
+        status=obj.getString(R.string.completed);
     }
     public void setOnItemClickListener(OnItemClickListener listener){
         mlistener=listener;
@@ -58,16 +58,16 @@ public class ListAdapterr extends RecyclerView.Adapter<ListAdapterr.MyHolder> {
         myHolder.date.setText(ourData.getDate());
 
         stat=ourData.getStatus();
-        myHolder.status.setText(stat);
+        //myHolder.status.setText(stat);
         //boolean result = stat.equals(s1);
-        if(stat.equals(s1)) //stat.equals(status)
+        if(stat.equals(status)) //stat.equals(s1)
         {
-            //myHolder.status.setText(stat);
+            myHolder.status.setText(stat);
             myHolder.sta.setColorFilter(Color.GREEN);
         }
         else
         {
-            //myHolder.status.setText(obj.getString(R.string.pending));
+            myHolder.status.setText(obj.getString(R.string.pending));
             myHolder.sta.setColorFilter(Color.RED);
         }
     }

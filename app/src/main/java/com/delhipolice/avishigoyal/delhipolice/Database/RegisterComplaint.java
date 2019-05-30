@@ -62,7 +62,7 @@ public class RegisterComplaint extends AsyncTask<String,String,String> {
         if(result.equals("Successfull")){
             Toast.makeText(context,"Complain Registered"+result, Toast.LENGTH_LONG).show();
         }else{
-            Toast.makeText(context,"Error in register"+result, Toast.LENGTH_LONG).show();
+            Toast.makeText(context,"Error in register complaint"+result, Toast.LENGTH_LONG).show();
         }
     }
 }

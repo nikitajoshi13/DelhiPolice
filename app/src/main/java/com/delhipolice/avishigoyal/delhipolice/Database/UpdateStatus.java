@@ -60,7 +60,7 @@ public class UpdateStatus extends AsyncTask<String,String,String> {
 
             Toast.makeText(context,"Status Updated" ,Toast.LENGTH_SHORT).show();
         }else{
-            Toast.makeText(context,"Error in register "+result, Toast.LENGTH_LONG).show();
+            Toast.makeText(context,"Error in update status "+result, Toast.LENGTH_LONG).show();
         }
     }
 

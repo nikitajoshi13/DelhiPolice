@@ -27,6 +27,7 @@ public class FetchComplaint extends AsyncTask<String,String,String> {
         OurData data;
         ListAdapterr listAdapter;
         Activity activity;
+        boolean flag;
 
         public FetchComplaint(Context context,ArrayList<OurData> ourData,RecyclerView recyclerView){
             this.context=context;
@@ -55,17 +56,24 @@ public class FetchComplaint extends AsyncTask<String,String,String> {
                 stmt.setInt(1,userid);
                 ResultSet rs = stmt.executeQuery();
                 con.setAutoCommit(true);
-                while(rs.next()) {
-                    data = new OurData();
-                    String id = rs.getString("id");
-                    String location = rs.getString("Location");
-                    String status = rs.getString("Status");
-                    data.setComplainID(id);
-                    data.setLocation(location);
-                    data.setStatus(status);
-                    ourData.add(data);
-                    res = "Successfull";
+                if(rs!=null) {
+                    while (rs.next()) {
+                        data = new OurData();
+                        String id = rs.getString("id");
+                        String location = rs.getString("Location");
+                        String status = rs.getString("Status");
+                        data.setComplainID(id);
+                        data.setLocation(location);
+                        data.setStatus(status);
+                        ourData.add(data);
+                        flag = true;
+                    }
+                }else{
+                    res = "Not registered complain yet";
                 }
+            }
+            if(flag){
+                res="Successful";
             }
         }
         catch (Exception e){
@@ -78,12 +86,12 @@ public class FetchComplaint extends AsyncTask<String,String,String> {
         @Override
         protected void onPostExecute(String result){
 
-        if(result.equals("Successfull")){
+        if(result.equals("Successful")){
             Log.d("complaint","Successfully fetched list");
             listAdapter = new ListAdapterr(context,ourData);
             recyclerView.setAdapter(listAdapter);
         }else{
-            Toast.makeText(context,"Error in register "+result, Toast.LENGTH_LONG).show();
+            Toast.makeText(context,"Error in fetch complaint "+result, Toast.LENGTH_LONG).show();
         }
     }
 }

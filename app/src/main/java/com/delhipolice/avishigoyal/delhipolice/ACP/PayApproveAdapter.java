@@ -14,7 +14,6 @@ import android.widget.Toast;
 import com.delhipolice.avishigoyal.delhipolice.Database.UpdateStatus;
 import com.delhipolice.avishigoyal.delhipolice.Database.UpdateVendor;
 import com.delhipolice.avishigoyal.delhipolice.Database.UpdateVendorACP;
-import com.delhipolice.avishigoyal.delhipolice.Police.OurData;
 import com.delhipolice.avishigoyal.delhipolice.R;
 
 import java.util.List;
@@ -65,14 +64,12 @@ public class PayApproveAdapter extends RecyclerView.Adapter<PayApproveAdapter.My
             @Override
             public void onClick(View v) {
                 Toast.makeText(obj, "Accepted", Toast.LENGTH_SHORT).show();
+                UpdateVendorACP updateVendor = new UpdateVendorACP(myHolder.vendor.getText().toString(),obj);
+                updateVendor.execute();
+                UpdateStatus updateStatus = new UpdateStatus(myHolder.complaint.getText().toString(),obj.getString(R.string.completed),obj);
+                updateStatus.execute();
             }
         });
-
-
-        //UpdateVendorACP updateVendor = new UpdateVendorACP(myHolder.vendor.getText().toString(),obj);
-        //updateVendor.execute();
-        //UpdateStatus updateStatus = new UpdateStatus(myHolder.complaint.getText().toString(),obj.getString(R.string.completed),obj);
-        //updateStatus.execute();
 
     }
 

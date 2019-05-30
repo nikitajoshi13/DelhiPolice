@@ -30,16 +30,16 @@ public class ACP extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
 
 
-        /*Intent intent = getIntent();
+        Intent intent = getIntent();
         String value = intent.getStringExtra("Button");
 
         ArrayList<OurData> data =new ArrayList<>();
 
         //database
         FetchAllComplaintACP fetch = new FetchAllComplaintACP(value,getApplicationContext(),data,recyclerView);
-        fetch.execute();*/
+        fetch.execute();
 
-        listMineList = new ArrayList<>();
+       /* listMineList = new ArrayList<>();
         l1=new ArrayList<>();
         l2=new ArrayList<>();
         l3=new ArrayList<>();
@@ -111,6 +111,6 @@ public class ACP extends AppCompatActivity {
 
                 break;
 
-        }
+        }*/
     }
 }

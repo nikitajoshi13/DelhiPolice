@@ -2,6 +2,7 @@ package com.delhipolice.avishigoyal.delhipolice.Police;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -57,13 +58,13 @@ public class VendorAdapter extends RecyclerView.Adapter<VendorAdapter.Myholders>
             @Override
             public void onClick(View v) {
                 Toast.makeText(obj,"Complain Assigned to a vendor" ,Toast.LENGTH_SHORT).show();
-                Intent intent=new Intent(obj, ComplainLodge.class);
-                obj.startActivity(intent);
-               /* UpdateVendor updateVendor = new UpdateVendor(myholder.name.getText().toString(),obj);
-                updateVendor.execute();
+                //Intent intent=new Intent(obj, ComplainLodge.class);
+                //obj.startActivity(intent);
                 MyPrefences myPrefences = new MyPrefences(obj);
+                UpdateVendor updateVendor = new UpdateVendor(myholder.name.getText().toString(),obj);
+                updateVendor.execute();
                 UpdateStatus updateStatus = new UpdateStatus(myPrefences.getComplainId(),obj.getString(R.string.pending),obj);
-                updateStatus.execute();*/
+                updateStatus.execute();
             }
         });
 

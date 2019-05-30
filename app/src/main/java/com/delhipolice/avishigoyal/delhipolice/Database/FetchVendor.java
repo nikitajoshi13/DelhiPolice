@@ -56,7 +56,7 @@ public class FetchVendor extends AsyncTask<String,String,String> {
                 res="check connection"+con;
             }
             else {
-                PreparedStatement stmt = con.prepareStatement("select a.name, b.assigned, b.total from test as a inner join vendor as b on (a.sno==b.UserId)");
+                PreparedStatement stmt = con.prepareStatement("select a.name, b.assigned, b.total from test as a inner join vendor as b on a.sno=b.UserId where a.user = ?");
                 stmt.setString(1,userID);
                 ResultSet rs = stmt.executeQuery();
                 con.setAutoCommit(true);
@@ -87,7 +87,7 @@ public class FetchVendor extends AsyncTask<String,String,String> {
                 adapter = new VendorAdapter(context, vendorData);
                 recyclerView.setAdapter(adapter);
         }else{
-            Toast.makeText(context,"Error in register "+result, Toast.LENGTH_LONG).show();
+            Toast.makeText(context,"Error in fetch vendor "+result, Toast.LENGTH_LONG).show();
         }
     }
 }

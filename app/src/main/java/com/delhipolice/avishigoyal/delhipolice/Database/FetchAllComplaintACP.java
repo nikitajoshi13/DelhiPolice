@@ -33,7 +33,7 @@ public class FetchAllComplaintACP extends AsyncTask<String,String,String> {
         this.status = status;
         this.context = context;
         connectionClass = new ConnectionClass();
-        activity = (Activity)context;
+        //activity = (Activity)context;
         this.ourData = ourData;
         this.recyclerView = recyclerView;
 
@@ -57,16 +57,26 @@ public class FetchAllComplaintACP extends AsyncTask<String,String,String> {
                 stmt.setString(1, status);
                 ResultSet rs = stmt.executeQuery();
                 con.setAutoCommit(true);
-                while (rs.next()) {
-                    data = new OurData();
-                    String id = rs.getString("id");
-                    String location = rs.getString("Location");
-                    String status = rs.getString("Status");
-                    data.setComplaints(id);
-                    data.setLocation(location);
-                    data.setStatus(status);
-                    ourData.add(data);
-                    res = "Successfull";
+                if(rs!=null) {
+                    while (rs.next()) {
+                        data = new OurData();
+                        String id = rs.getString("id");
+                        String location = rs.getString("Location");
+                        String status = rs.getString("Status");
+                        data.setComplaints(id);
+                        data.setLocation(location);
+                        data.setStatus(status);
+                        stmt = con.prepareStatement("select * from test where sno=?");
+                        stmt.setString(1,rs.getString("Vendor"));
+                        rs = stmt.executeQuery();
+                        while(rs.next()) {
+                            data.setVendor(rs.getString("name"));
+                        }
+                        ourData.add(data);
+                        res = "Successfull";
+                    }
+                }else{
+                    res = "Not registered complain yet";
                 }
             }
         } catch (Exception e) {

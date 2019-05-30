@@ -75,7 +75,7 @@ public class MyPrefences {
     }
 
     public String getUserId(){
-        return pref.getString(USER_ID,"1");
+        return pref.getString(USER_ID,"0");
     }
 
 

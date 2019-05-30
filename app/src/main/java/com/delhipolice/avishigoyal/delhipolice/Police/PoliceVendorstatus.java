@@ -32,13 +32,13 @@ public class PoliceVendorstatus extends AppCompatActivity {
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        //ArrayList<VendorData> data =new ArrayList<>();
+        ArrayList<VendorData> data =new ArrayList<>();
 
         //database
-        //FetchVendor fetch = new FetchVendor(getApplicationContext(),data,recyclerView);
-        //fetch.execute();
+        FetchVendor fetch = new FetchVendor(getApplicationContext(),data,recyclerView);
+        fetch.execute();
 
-        listMineList = new ArrayList<>();
+        /*listMineList = new ArrayList<>();
         VendorData vendorData =new VendorData();
         VendorData vendorData1 =new VendorData();
 
@@ -54,7 +54,7 @@ public class PoliceVendorstatus extends AppCompatActivity {
         listMineList.add(vendorData1);
         mAdapter = new VendorAdapter(this, listMineList);
         Toast.makeText(this, "adapter toast", Toast.LENGTH_SHORT).show();
-        recyclerView.setAdapter(mAdapter);
+        recyclerView.setAdapter(mAdapter);*/
 
     }
 }

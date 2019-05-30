@@ -62,7 +62,7 @@ public class NewAdapter extends RecyclerView.Adapter<NewAdapter.MyHolder> {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(obj,PoliceVendorstatus.class);
-                //myPrefences.setComplainId(listData.get(i).getComplaints());
+                myPrefences.setComplainId(listData.get(i).getComplaints());
                 obj.startActivity(intent);
 
             }
