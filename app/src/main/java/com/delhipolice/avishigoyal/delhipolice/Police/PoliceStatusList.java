@@ -34,17 +34,18 @@ public class PoliceStatusList extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
 
 
-        Intent intent = getIntent();
-        String value = intent.getStringExtra("Button");
+        //database
+        //Intent intent = getIntent();
+        //String value = intent.getStringExtra("Button");
 
         ArrayList<OurData> data =new ArrayList<>();
 
         //database
-        FetchAllComplaint fetch = new FetchAllComplaint(value,getApplicationContext(),data,recyclerView);
-        fetch.execute();
+        //FetchAllComplaint fetch = new FetchAllComplaint(value,getApplicationContext(),data,recyclerView);
+        //fetch.execute();
 
 
-        /*listMineList = new ArrayList<>();
+        listMineList = new ArrayList<>();
         l1=new ArrayList<>();
         l2=new ArrayList<>();
         l3=new ArrayList<>();
@@ -162,6 +163,6 @@ public class PoliceStatusList extends AppCompatActivity {
                 mAdapter = new PayPendingAdapter(this, l5);
                 recyclerView.setAdapter(mAdapter);
                 break;
-        }*/
+        }
     }
 }

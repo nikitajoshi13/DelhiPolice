@@ -42,7 +42,8 @@ public class TabFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_tab, container, false);
 
-        /*ab = new OurData();
+        //database need to commit
+        ab = new OurData();
         ab.setComplainID("201904231122");
         ab.setLocation("Kashmere Gate");
         ab.setDate("Friday, 12 April, 2019");
@@ -52,20 +53,21 @@ public class TabFragment extends Fragment {
         bc.setDate("Monday, 8 April, 2019");
 
         bc.setLocation("Dilshad Garden");
-        bc.setStatus("Completed");*/
+        bc.setStatus("Completed");
+        //till here
 
         ArrayList<OurData> data =new ArrayList<>();
-        //data.add(ab); //need to comment
-       //data.add(bc); //need to comment
+        data.add(ab); //database need to comment
+        data.add(bc); //database need to comment
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.listRecyclerView);
-        //ListAdapterr listAdapter = new ListAdapterr(getContext(),data); //need to comment
-        //recyclerView.setAdapter((RecyclerView.Adapter) listAdapter);   //need to comment
+        ListAdapterr listAdapter = new ListAdapterr(getContext(),data); //database need to comment
+        recyclerView.setAdapter((RecyclerView.Adapter) listAdapter);   //database need to comment
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
 
         //database
-        FetchComplaint fetch = new FetchComplaint(getContext(),data,recyclerView);
-        fetch.execute();
+        //FetchComplaint fetch = new FetchComplaint(getContext(),data,recyclerView);
+        //fetch.execute();
 
         return view;
     }

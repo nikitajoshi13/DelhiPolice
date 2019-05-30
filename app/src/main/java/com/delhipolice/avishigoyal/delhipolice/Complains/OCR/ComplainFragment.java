@@ -21,6 +21,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.delhipolice.avishigoyal.delhipolice.Database.RegisterComplaint;
 import com.delhipolice.avishigoyal.delhipolice.R;
@@ -142,9 +143,10 @@ public class ComplainFragment extends android.support.v4.app.Fragment {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                RegisterComplaint registerComplaint = new RegisterComplaint(uuid.toString(),tvAddress.getText().toString(),getString(R.string.new_status),d1.getText().toString(),getContext());
-                registerComplaint.execute();
-                //Toast.makeText(getContext(),"Complain lodged",Toast.LENGTH_SHORT).show();
+                //database
+                //RegisterComplaint registerComplaint = new RegisterComplaint(uuid.toString(),tvAddress.getText().toString(),getString(R.string.new_status),d1.getText().toString(),getContext());
+                //registerComplaint.execute();
+                Toast.makeText(getContext(),"Complain lodged",Toast.LENGTH_SHORT).show();
             }
         });
 

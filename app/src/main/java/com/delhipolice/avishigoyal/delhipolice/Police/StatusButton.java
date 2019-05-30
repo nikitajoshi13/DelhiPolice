@@ -87,8 +87,9 @@ public class StatusButton extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getContext(),PoliceStatusList.class);
-                intent.putExtra("Button",getString(R.string.new_status));
-                //intent.putExtra("Button","1");
+                ////database
+                // intent.putExtra("Button",getString(R.string.new_status));
+                intent.putExtra("Button","1");
                 startActivity(intent);
             }
         });
@@ -97,8 +98,9 @@ public class StatusButton extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getContext(),PoliceStatusList.class);
-                intent.putExtra("Button",getString(R.string.pending));
-                //intent.putExtra("Button","2");
+                //database//
+                // intent.putExtra("Button",getString(R.string.pending));
+                intent.putExtra("Button","2");
                 startActivity(intent);
             }
         });
@@ -106,8 +108,9 @@ public class StatusButton extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getContext(),PoliceStatusList.class);
-                intent.putExtra("Button",getString(R.string.completed));
-                //intent.putExtra("Button","3");
+                //database
+                // intent.putExtra("Button",getString(R.string.completed));
+                intent.putExtra("Button","3");
                 startActivity(intent);
             }
         });
@@ -115,8 +118,9 @@ public class StatusButton extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getContext(),PoliceStatusList.class);
-                intent.putExtra("Button",getString(R.string.approve_payment));
-                //intent.putExtra("Button","4");
+                //database
+                // intent.putExtra("Button",getString(R.string.approve_payment));
+                intent.putExtra("Button","4");
                 Log.d("button4","button 4");
                 startActivity(intent);
             }
@@ -125,8 +129,9 @@ public class StatusButton extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getContext(),PoliceStatusList.class);
-                intent.putExtra("Button",getString(R.string.pending_payment));
-                //intent.putExtra("Button","5");
+                //database
+                // intent.putExtra("Button",getString(R.string.pending_payment));
+                intent.putExtra("Button","5");
                 startActivity(intent);
             }
         });

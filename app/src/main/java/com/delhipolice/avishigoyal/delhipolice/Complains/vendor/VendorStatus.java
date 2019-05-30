@@ -37,17 +37,17 @@ public class VendorStatus extends AppCompatActivity {
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-
-        Intent intent = getIntent();
-        String value = intent.getStringExtra("Button");
+        //database
+        //Intent intent = getIntent();
+        //String value = intent.getStringExtra("Button");
 
         ArrayList<OurData> data =new ArrayList<>();
 
         //database
-        FetchAllComplaintVendor fetch = new FetchAllComplaintVendor(value,getApplicationContext(),data,recyclerView);
-        fetch.execute();
+        //FetchAllComplaintVendor fetch = new FetchAllComplaintVendor(value,getApplicationContext(),data,recyclerView);
+        //fetch.execute();
 
-        /*listVendor= new ArrayList<>();
+        listVendor= new ArrayList<>();
         l1=new ArrayList<>();
         l2=new ArrayList<>();
         l3=new ArrayList<>();
@@ -174,7 +174,7 @@ public class VendorStatus extends AppCompatActivity {
 //                mAdapter = new PayPendingAdapter(this, l5);
 //                recyclerView.setAdapter(mAdapter);
 //                break;
-        }*/
+        }
     }
 
 

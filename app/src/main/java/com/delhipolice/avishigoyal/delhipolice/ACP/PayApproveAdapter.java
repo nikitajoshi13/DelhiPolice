@@ -64,10 +64,11 @@ public class PayApproveAdapter extends RecyclerView.Adapter<PayApproveAdapter.My
             @Override
             public void onClick(View v) {
                 Toast.makeText(obj, "Accepted", Toast.LENGTH_SHORT).show();
-                UpdateVendorACP updateVendor = new UpdateVendorACP(myHolder.vendor.getText().toString(),obj);
-                updateVendor.execute();
-                UpdateStatus updateStatus = new UpdateStatus(myHolder.complaint.getText().toString(),obj.getString(R.string.completed),obj);
-                updateStatus.execute();
+                //database
+                //UpdateVendorACP updateVendor = new UpdateVendorACP(myHolder.vendor.getText().toString(),obj);
+                //updateVendor.execute();
+                //UpdateStatus updateStatus = new UpdateStatus(myHolder.complaint.getText().toString(),obj.getString(R.string.completed),obj);
+                //updateStatus.execute();
             }
         });
 
